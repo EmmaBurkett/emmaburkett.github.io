@@ -1,6 +1,5 @@
 body {
     width: 99vw;
-    background: white;
     margin: auto;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
@@ -15,17 +14,17 @@ header h1 {
 #title, footer {
     background:rgb(204, 237, 253);
     margin: 4vw 21vw 4vw; 
-    padding: .1vw .2vw .1vw .2vw; 
+    padding: .1vw .2vw .1vw; 
     border-radius: 2vw;
 }
 header img {
     width: 15vw;
     height: 18vw;
     border-radius: 0.3vw 2vw 0.3vw 0.3vw;
-    box-shadow: 0 1vw 2vw 0 rgba(0, 0, 0, 0.2), 0 1.5vw 3vw 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 1vw black;
     float: right;
     object-fit: cover;
-    margin: .9% 22% 0% 0%;
+    margin: .8% 22.3% 0% 0%;
 }
 main h2 {
     font-size: 2vw;
