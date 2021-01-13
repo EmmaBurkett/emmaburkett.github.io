@@ -2,24 +2,32 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <Title>Emma L. Burkett Portal Home Page</Title>
+        <meta name='description' content="Emma L. Burkett's portal home page for WDD 230: Web Frontend Development at BYU-Idaho">
+        <meta name='veiwport' content='width=device-width, initial-scale-1.0'>
+        <Title>Emma L. Burkett Portal Home Page WDD230</Title>
         <link href="WDD230CSS_firstassignment.css" rel="stylesheet">
+        <script src='page.js'></script>
     </head>
-
     <body>
         <div class="a">
-            <img src="EMMA BLACK AND WHITE.png" alt="Emma Burkett"/>
-            <div id="title">
-                <h1>Emma L. Burkett</h1>
-            </div>
-            <h2>CIT 230: Assignment Portal</h2>
-            <ul>
-                <li>Lesson 02: Assignment Link</li>
-                <li>Lesson 03: Assignment Link</li>
-                <li>Lesson 04: Link | Link</li>
-            </ul>
-            <p>© 2020 | Emma L. Burkett | Florida | BYUI Online Learning<br>
-            Last Updated: 01/12/2021 5:52</p>
+            <header>
+                <img src="EMMA BLACK AND WHITE.png" alt="Emma Burkett"/>
+                <div id="title">
+                    <h1>Emma L. Burkett</h1>
+                </div>
+            </header>
+            <main>
+                <h2>CIT 230: Assignment Portal</h2>
+                <ul>
+                    <li>Lesson 02: <a href="#">Assignment Link</a></li>
+                    <li>Lesson 03: <a href="#">Assignment Link</a></li>
+                    <li>Lesson 04: <a href="#">Link to Project</a> | <a href="#">Link to Weather</a></li>
+                </ul>
+            </main>
+            <footers>
+                <p>&copy; <span id='copyrightyear'></span> | Emma L. Burkett | Florida | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
+                Last Updated: 01/12/2021 5:52</p>
+            </footers>
         </div> <!--end class a-->
     </body>
 </html>
