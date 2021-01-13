@@ -33,7 +33,6 @@ main h2 {
 }
 main ul {
     margin: 0vw 0vw 0vw 21.5vw;
-    list-style-position: outside;
     font-size: 1.8vw
 }
 footer {
