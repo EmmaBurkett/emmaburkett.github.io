@@ -1,0 +1,26 @@
+body {
+    font-family:  'Lato', sans-serif;
+    background-color: #e7ecf2;
+}
+
+h1 {
+    background-color: #12aaeb;
+    color: white;
+}
+header {
+    
+}
+
+h3 {
+    color: #12aaeb
+}
+
+button {
+    background-color: #d8d8d8;
+    color: white;
+    font-weight: bold;
+}
+
+#buttonyello {
+    background-color: #ffcf2d;
+}
