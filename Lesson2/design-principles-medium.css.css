@@ -1,0 +1,43 @@
+@media only screen and (min-width: 32.5em) {
+
+    body {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 190%;
+        padding: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "box4 . ." "box1 box2 ." "box3 . .";
+    }
+
+    h1 {
+        font-size: 210%;
+        grid-area: box4;
+        padding: 0;
+    }
+
+    #leftbox {
+        background:rgb(255, 232, 232);
+        grid-area: box1;
+    }
+
+    #bestbox {
+        background: rgb(255, 232, 232);
+        grid-area: box2;
+    }
+
+    #rightbox {
+        background: rgb(255, 232, 232);
+        grid-area: box3;
+    }
+
+}

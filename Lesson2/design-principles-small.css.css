@@ -1,0 +1,70 @@
+body {
+    width: 100%;
+    margin: auto;
+    font-family: 'Bodoni Moda', serif;
+    background-color: white;
+}
+
+h1, h2 {
+    color: black;
+    font-size: 200%;
+    text-align: center;
+    margin: 0;
+    background-color: #b4e8ff;
+    padding: 2% 0 2% 0;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+img {
+    width: 95%;
+    padding: 0 2.5% 0;
+}
+
+p, a {
+    padding: 0 2.5% 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article {
+    width: 93%;
+    margin: auto;
+    margin-top: 2%;
+    border: solid rgb(48, 46, 46) 2px;
+    border-top: none;
+    border-radius: 20px;
+}
+
+#headbox {
+    grid-column: 1/span 3;
+}
+
+#leftbox {
+    background:rgb(255, 232, 232);
+    grid-column: 1/span3;
+
+}
+
+#bestbox {
+    background: rgb(255, 232, 232);
+    grid-column: 1/span3;
+}
+
+#rightbox {
+    background: rgb(255, 232, 232);
+    grid-column: 1/span3;
+}
+
+h3 {
+    color: white;
+    background: rgb(48, 46, 46);
+    text-align: center;
+    margin: 0;
+    border-radius: 18px 18px 0 0;
+}

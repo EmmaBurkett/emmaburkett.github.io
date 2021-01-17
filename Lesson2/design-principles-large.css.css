@@ -1,0 +1,38 @@
+@media only screen and (min-width: 50em) {
+
+    body {
+        width: 80%;
+    }
+    
+    h2 {
+        font-size: 250%;
+        padding: 0;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "box4 . ." "box1 box2 box3";
+    }
+    
+    h1 {
+        font-size: 300%;
+        grid-area: box4;
+        padding: 0;
+    }
+
+    #leftbox {
+        background:rgb(255, 232, 232);
+        grid-area: box1;
+    }
+    
+    #bestbox {
+        background: rgb(255, 232, 232);
+        grid-area: box2;
+    }
+    
+    #rightbox {
+        background: rgb(255, 232, 232);
+        grid-area: box3;
+    }
+
+}
