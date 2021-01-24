@@ -7,15 +7,20 @@ body {
 
 #title {
     background-color: #12aaeb;
-    margin: 4vw 21vw 4vw; 
-    padding: .1vw .2vw .1vw; 
-    border-radius: 2vw;
 } 
 
 h1 {
     color: white;
-    font-size:5vw;
-    padding: 10vw 20vw 0vw;
+    font-size:7vw;
+    text-align: center;
+}
+
+img {
+    width: 7vw;
+    height: 14vw;
+    border-radius: 0.3vw 2vw 0.3vw 0.3vw;
+    box-shadow: 0 0 1vw black;
+    object-fit: cover;
 }
 
 .grid-container {
@@ -30,33 +35,18 @@ h1 {
 .box1 {
     grid-area: box1;
     background: white;
-    padding: 5vw;
-    margin: 0 0 0 1vw;
 }
 
 .box2 {
     grid-area: box2;
     background: white;
-    padding: 5vw 7.5vw 7.5vw;
 }
 
 .box3 {
     grid-area: box3;
     background: white;
-    padding: 5vw;
-    margin: 0 1vw 0 0;
 }
 
 h3 {
     color: #12aaeb;
-}
-
-button {
-    background-color: #d8d8d8;
-    color: white;
-    font-weight: bold;
-}
-
-#buttonyello {
-    background-color: #ffcf2d;
 }

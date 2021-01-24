@@ -22,7 +22,6 @@ header img {
     height: 18vw;
     border-radius: 0.3vw 2vw 0.3vw 0.3vw;
     box-shadow: 0 0 1vw black;
-    float: right;
     object-fit: cover;
     margin: .8% 22.3% 0% 0%;
 }
