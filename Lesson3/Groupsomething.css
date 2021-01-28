@@ -87,7 +87,6 @@ footer p {
     font-size: 10px;
     color: #213a53;
     text-align: center;
-
 }
 
 .flight-info {
@@ -98,10 +97,21 @@ footer p {
 }
 
 .flight-info p {
-    color: #001b36;
+    color: #213a53;
     text-align: center;
     font-size: 10px;
     font-weight: bolder;
+    margin-bottom: 0;
+}
+
+#addmargin {
+    margin-top: 12%;
+    padding: 0;
+}
+
+.flight-info h3 {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .barcode {
@@ -120,11 +130,10 @@ footer p {
     padding: 2% 0 7%;
 }
 
-.date,
-.flight,
-.gate,
-.seat,
-.boarding-zone,
-.boarding-time {
+.middletwo {
+    margin-top: 20%;
+}
+
+.middle, .middletwo {
     text-align: center;
 }
