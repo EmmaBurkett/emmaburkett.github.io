@@ -1,0 +1,47 @@
+.a {
+    width: 30%;
+    margin: auto;
+    background: rgb(242, 240, 242);
+    font-family: 
+}
+
+.gridandflex {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+img {
+    width: 5%;
+    float: left;
+    margin: 3% 2% 0;
+}
+
+section:nth-child(4) {
+    grid-column: 1/span 3;
+}
+
+#imgtwo {
+    margin-left: 5%;
+    width: 90%;
+}
+
+
+section {
+    justify-items: center;
+}
+
+/*
+.departure-info {
+    background: rgb(255, 254, 255);
+    justify-items: center;
+}
+
+.flight-info {
+    background: rgb(255, 254, 255);
+    justify-items: center;
+}
+
+.departure-info p {
+    color: rgb(2, 26, 60);
+}
+*/

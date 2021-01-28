@@ -1,0 +1,101 @@
+.a {
+    width: 100%;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*grid and flex*/
+.gridandflex {
+
+    display: ;
+    grid-template-columns: ;
+
+}
+
+header {
+    color: blue;
+    font-style: bold;
+}
+/*contents*/
+main {                      /*Mom*/
+
+    display: contents;      /*Drops kids off at grandma's house*/
+    background-color: red;
+    color: green;
+    font-style: italic;
+}
+/*contents*/
+#contents {                 /*grandmother (grandma's house grandma's rules!)*/
+/* 
+    display: initial;
+*/
+
+    background-color: yellow;
+
+}
+
+footer {
+    display: ;
+    color: purple;
+    font-style: normal;
+}
+/*Inline and inline-block*/
+header h1 {
+
+    display: ;
+    background-color: pink;
+/*
+    width: 70%; 
+*/  
+}
+/*block*/
+header h2 {
+
+    display: ;
+    background-color: rgb(142, 255, 119);
+    width: ;
+}
+/*color*/
+h1 {
+    font-size: 300%;
+/*
+    color: initial;
+*/
+}
+/*list-item*/
+h2 {
+
+    display: list-item;
+
+    font-size: 200%;
+}
+
+li {
+    display: ;
+    font-size: 150%;
+}
+/*list-item*/
+p {
+
+
+    font-size: 100%;
+
+    background: rgb(255, 195, 139);
+    display: inline;
+
+}
+/*inherit*/
+footer p {
+
+    display: inherit;
+
+}
+/*none*/
+footer li {
+/*
+    display: none;
+
+
+    visibility: hidden;
+*/
+
+}
