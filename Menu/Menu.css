@@ -8,9 +8,8 @@ nav {
 #navigation {
     list-style: none;
     padding: 0;
-    display: flex;
+    display: grid;
     grid-template-columns: auto;
-    flex-direction: column;
 }
 
 #navigation li:first-child{
