@@ -10,6 +10,7 @@ nav {
     padding: 0;
     display: flex;
     grid-template-columns: auto;
+    flex-direction: column;
 }
 
 #navigation li:first-child{

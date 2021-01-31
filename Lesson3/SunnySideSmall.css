@@ -28,14 +28,13 @@ nav ul li a {
     text-align: center;
     font-size: 200%;
     text-decoration: none;
-    text-decoration: none;
     color: rgb(19, 105, 180);
     font-family: 'Shadows Into Light', cursive;
 }
 
 nav a:hover {
 	background-color:  rgb(255, 247, 210);
-	color: rgb(6, 139, 255);;
+	color: rgb(6, 139, 255);
 }
 
 #grid {
@@ -65,13 +64,18 @@ h1, h2 {
     text-align: center;
 }
 
-
 #bestbox {
     background: white;
 }
 
-#grid-img {
+#bestbox img {
     width: 100%;
+}
+
+#Emoji {
+    width: 100%;
+    min-width: 100%;
+    max-height: 100%;
 }
 
 footer {

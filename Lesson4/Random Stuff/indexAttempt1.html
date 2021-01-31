@@ -5,57 +5,82 @@
         <meta name='description' content="Ice Group Project">
         <meta name='veiwport' content='width=device-width, initial-scale-1.0'>
         <Title>Blue Skies Forecasting</Title>
-        <link rel="stylesheet" href="normalize.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Dancing+Script&family=Dosis:wght@200;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Dancing+Script&family=Dosis:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="normalize.css">
         <link href="SunnySideSmall.css" rel="stylesheet">
         <link href="SunnySideMedium.css" rel="stylesheet">
         <link href="SunnySideLarge.css" rel="stylesheet">
+        <script src="Menu.js"></script>
     </head>
     <body>
-        <div class="codesize">
+        <div class="codesize"> 
+
             <header id="headbox">
                 <img src="Blue Skies banner.jpg" alt="Blue Skies Title"/>
+                <h2><br>Preston Idaho: Party on Cloud Nine</h2>
             </header> 
-            <nav>                                                   <!-- Tool Bar Start -->
+
+                 
+            <nav id="navigation">                                                   <!-- Tool Bar Start -->
                 <ul>
+                    <li><a href="#" class="ham">&#9776;</a></li>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="Audience.html">Target-Audience</a></li>
-                    <li><a href="color scheme.html">Color Scheme</a></li>
-                    <li><a href="Typography.html">Typography</a></li>
-                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
                 </ul>
-            </nav>                                                   <!-- Tool Bar End -->
+            </nav>         
+            
+
             <main id="grid">
                 <article id="leftbox">                                                   <!-- Article leftbox  Start-->
-                    <h1>Site Purpose</h1>
+                    <h1>Weather Summary</h1>
                     <p>The purpose of this website, Blue Skies Forecasting, is to tell the public what days would be good for going outside. It is meant to attract tourists and to help the locals plan their activities. 
                         The website will display to the user the best upcoming days for outside activity. 
                         <br> It will not display bad weather days. 
                         <br>The website will also promote fun activities, and places to sight-see according to the day: if it’s going to be hot, the website will promote an ice cream shop versus if it’s cold the website will promote a hot chocolate shop. 
                         <br>In addition on another page the website will display upcoming activites in the area and the correlating weather, even if the weather is poor. 
                     </p>
-                </article>                                                   <!-- Article leftbox End -->
+                </article>
+                
+                <article id="leftboxbottom">
+                    <img src="SnowyTrees.jpg" alt="Blue Skies Forecast Logo" id="grid-img"/>
+                </article>
 
                 <article id="bestbox">                                                   <!-- Article bestbox Start -->
                     <img src="blueskieslogo.jpg" alt="Blue Skies Forecast Logo" id="grid-img"/>
                 </article>                                                   <!-- Article bestbox End -->
 
+                <article id="toprightbox">
+                    <h1>Five Day Forecast</h1>
+                </article>
+
                 <article id="rightbox">                                                   <!-- Article rightbox Start -->
-                    <h1>Site Purpose</h1>
                     <p>The definition of a good weather day will be as follows:</p> 
                     <li>Winter: Days with less snow or a warmer temperature above 33 degrees Fahrenheit.  It will also list days with heavy snowfall because local snowball fights are important too!</li>
                     <li>Spring and Fall: Days without rain or days without icy roadways. Any warm day (warm being unusually warm for the region and the season).</li>
                     <li>Summer: Days above 70 degrees Fahrenheit. </li>
-                </article>                                                   <!-- Article rightbox End -->
+                </article>                     
+                
+                <article id="bottomrightbox">
+                    <img src="Coffepicture.jpg" alt="Blue Skies Forecast Logo" id="grid-img"/>
+                </article>
             </main>
+
+
             <footer>
                 <p class='legal'>&copy; <span id='copyrightyear'></span> | Emma L. Burkett | Florida | <a href="https://www.byui.edu/online" target="_blank">Blue Skies Forecasting</a><br>
-                Last Updated: <span id='lastupdated'></span></p>
+                <span id='lastupdated'></span></p>
             </footer>
+
         </div> <!--end class a-->
     </body>
 </html>
