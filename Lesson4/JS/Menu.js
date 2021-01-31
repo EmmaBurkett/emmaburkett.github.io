@@ -36,7 +36,4 @@ window.addEventListener('load', (event)=> {
 
     let date = weekday[today.getDay()] + ', ' + today.getDate() + " " + month[today.getMonth()] + " " + today.getFullYear();
     lu.textContent = date;
-
-    const cry = document.querySelector('#copyrightyear');
-    cry.textContent = new Date().getFullYear();
 })
