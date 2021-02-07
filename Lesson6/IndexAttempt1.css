@@ -1,0 +1,244 @@
+.codesize {
+    width: 100%;
+    margin: auto;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: rgb(0, 86, 169);
+    font-size: 200%;
+    text-align: center;
+    background-image: linear-gradient(white, rgb(255, 208, 0)); 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {    
+    margin: 0 auto;
+    background-color: rgb(255, 208, 0);   
+}
+
+#navigation ul {
+    list-style-type: none;
+    display: grid;   
+    grid-template-columns: 1fr;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#navigation ul li:first-child {
+    display: block;
+    text-align: right;
+}
+
+#navigation ul li {
+    display: none;
+}
+
+#navigation ul a:link,
+#navigation ul a:visited,
+#navigation ul a:hover,
+#navigation ul a:active,
+#navigation ul a:focus {
+    display: block;
+    font-size: 200%;
+    text-decoration: none;
+    color: rgb(19, 105, 180);
+    margin: 0;
+    padding: 0;
+}
+
+#navigation a:hover {
+    background-color: rgb(255, 247, 210);
+    color: rgb(6, 139, 255);
+}
+
+#navigation.responsive li {
+    display: block;
+    text-align: center;
+}
+
+#heroImage article:nth-child(1) {
+    margin: 5% 2% 5%;
+}
+
+#heroImage article:nth-child(1) img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#heroImage article:nth-child(2) {
+    margin: 0% 2% 0%;
+    padding-bottom: 5%;
+    border: 1px solid grey;
+    background-color: rgb(245, 245, 245);
+    border-bottom: none;
+}
+
+#heroImage article:nth-child(2) h1 {
+    border-bottom: 1px solid rgb(6, 139, 255);
+    margin: 0% 20% 5%;
+}
+
+#heroImage article:nth-child(3) {
+    margin: 0 2% 5%;
+}
+
+#heroImage article:nth-child(3) img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#bestbox {
+    background: white;
+    padding-top: 10%;
+    margin: 5% 2% 0;
+}
+
+#bestbox img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#forecast article:nth-child(1) {
+    margin: 5% 2% 0;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: rgb(206, 206, 206); 
+    border: 1px solid grey;
+    border-bottom: 0;
+}
+
+#forecast article:nth-child(1) h1 {
+    margin: 0;
+}
+
+#forecast article:nth-child(3) {
+    margin: 0% 2% 0%;
+    margin-top: 0;
+    padding: 5% 0 5%;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid grey;
+    border-top: 0;
+    border-bottom: 0;
+    clear: none;
+    grid-row: 2;
+}
+
+#forecast article:nth-child(2) {
+    margin: 0% 2% 2.5%;
+    grid-row: 3;
+}
+
+#forecast article:nth-child(2) img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+article p, article a, article li {
+    padding: 0 2.5% 0;
+    margin: 0;
+    font-size: 150%;
+    color: rgb(83, 83, 83); 
+    font-weight: bold;
+}
+
+article h1 {
+    text-align: center;
+    padding-top: 5%;
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(0, 89, 169);
+}
+
+#map {
+    background:rgb(255, 208, 0);
+    margin: 2.5% 0 0; 
+    padding: .1vw .2vw .1vw; 
+    text-align: center;
+    color: rgb(19, 105, 180);
+}
+
+#map h4, #map p {
+    text-align: left;
+    padding-left: 9%;
+    padding-bottom: 5%;
+}
+
+#map h4 {
+    font-size: 150%;
+    margin-top: 5%;
+    padding-bottom: 0;
+}
+
+.mediaImages {
+    display: none;
+}
+
+#bottomPic {
+    display: none;
+}
+
+#container {
+    position: relative;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    margin-left: 10%;
+    height: auto;
+}
+
+#map article div img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border: 1px solid black;
+}
+
+
+#overlay a {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: 95.3%;
+    opacity: 0;
+    background: white;
+}
+
+#container:hover #overlay a {
+    opacity: .5;
+}
+
+footer {
+    background:rgb(255, 208, 0);
+    margin: 0;
+    padding: .1vw .2vw .1vw; 
+    text-align: center;
+    color: rgb(19, 105, 180);
+}
+
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+    color: rgb(19, 105, 180);
+}
+
+footer p, footer a {
+    font-size: 125%;
+}
