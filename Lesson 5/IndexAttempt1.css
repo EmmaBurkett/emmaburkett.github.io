@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+header p {
+    text-align: center;
+    background: rgb(255, 208, 0);
+    margin: 0;
+    font-size: 300%;
+    padding: 0%;
+}
+
 header img {
     width: 100%;
     margin: 0;
@@ -100,6 +108,10 @@ nav ul {
     vertical-align: bottom;
 }
 
+#fivedayforecast {
+    display: none;
+}
+
 #bestbox {
     background: white;
     padding-top: 10%;
@@ -170,7 +182,7 @@ article h1 {
 #map {
     background:rgb(255, 208, 0);
     margin: 2.5% 0 0; 
-    padding: .1vw .2vw .1vw; 
+    padding: 1% 2% 3%; 
     text-align: center;
     color: rgb(19, 105, 180);
 }
@@ -230,7 +242,7 @@ article h1 {
 footer {
     background:rgb(255, 208, 0);
     margin: 0;
-    padding: .1vw .2vw .1vw; 
+    padding: 1% 2% 1%;
     text-align: center;
     color: rgb(19, 105, 180);
 }
