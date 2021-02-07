@@ -10,6 +10,8 @@ window.addEventListener('load', ()=> {
 window.addEventListener('load', (event)=> {
     const lu = document.querySelector('#lastupdated');
     let today = new Date();
+    
+    const ad = document.querySelector('#advertizement');
 
     let weekday = new Array(7);
     weekday[0] = "Sunday";
@@ -33,6 +35,11 @@ window.addEventListener('load', (event)=> {
     month [9] = "October";
     month [10] = "November";
     month [11] = "December";
+
+    if (weekday[5]) {
+        let display = "Saturday: Preston Pancakes at the Park! 9:00 a.m. at the city park Pavilion";
+        ad.textContent = display;
+    }
 
     let date = weekday[today.getDay()] + ', ' + today.getDate() + " " + month[today.getMonth()] + " " + today.getFullYear();
     lu.textContent = date;
