@@ -10,7 +10,7 @@ window.addEventListener('load', ()=> {
 window.addEventListener('load', (event)=> {
     const lu = document.querySelector('#lastupdated');
     let today = new Date();
-
+    
     let weekday = new Array(7);
     weekday[0] = "Sunday";
     weekday[1] = "Monday";
@@ -34,6 +34,25 @@ window.addEventListener('load', (event)=> {
     month [10] = "November";
     month [11] = "December";
 
+   
     let date = weekday[today.getDay()] + ', ' + today.getDate() + " " + month[today.getMonth()] + " " + today.getFullYear();
     lu.textContent = date;
+})
+
+window.addEventListener('load', (event)=> {
+    
+    var d = new Date();
+    var n = d.getDay()
+
+    const ad = document.querySelector('#advertizement');
+
+    if (n == 5) {
+            let display = "Saturday: Preston Pancakes at the Park! 9:00 a.m. at the city park Pavilion";
+            ad.textContent = display;
+        }
+})
+
+window.addEventListener('auxclick', (event)=> {
+    const ad = document.querySelector('.navig');
+    ad
 })

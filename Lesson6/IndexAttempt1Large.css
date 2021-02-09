@@ -7,6 +7,11 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     
+    #navig {
+        display: none;
+        border-bottom: 1px solid black;
+    }
+
     nav ul li a {
         padding: 10%;
         width: 100%;
@@ -62,6 +67,19 @@
         display: none;
     }
 
+    #fivedayforecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+        height: 100%;
+        margin: 2% 2% 2%;
+    }    
+
+    #fivedayforecast img {
+        width: 50%;
+        margin-left: 5%;
+    }
+
     #bestbox {
         display: none;
     }
@@ -95,11 +113,7 @@
         margin-bottom: 2%;
     }
 
-    #forecast article:nth-child(3) img {
-
-    }
-
-    #map {
+    #map {                      /* This is the entire footer; the source of my problems*/
         margin: 0;
     }
 
@@ -107,7 +121,8 @@
         margin: 0 0 0;
         padding: 2% 2% 2% 2%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
         justify-items: center;
     }
 
@@ -129,7 +144,7 @@
     .media {
         width: 30%;
         border-radius: 50%;
-    }
+    }  /*intresting*/
 
     #imageleft {
         margin-left: 100%;
@@ -148,9 +163,41 @@
         grid-row: 3;
     }
 
+        .mediaImages {
+            position: relative;
+            width: 30%;
+            padding: 0;
+            margin: 0;
+            margin-left: 10%;
+            height: auto;
+        }
+        
+        #map article section img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+        
+        
+        .overlayPictures a {
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            width: 95.3%;
+            opacity: 0;
+            height: auto;
+            background: purple;
+        }
+        
+        .overlayPictures:hover .overlayPictures a {
+            opacity: 1;
+        }
+
     #bottomPic {
         display: block;
-        width: 65%;
+        width: 74%;
         grid-column: 1/ span 3;
         grid-row: 1/ span 3;
         border: 2px solid black;
@@ -160,8 +207,7 @@
         height: 88%;
     }
 
-    #map div {
-        display: block;
+    .maybe {
         width: 88%;
         grid-column: 4/ span 3;
         grid-row: 1/ span 3;
@@ -172,7 +218,7 @@
         padding-bottom: 0;
     }
 
-    #map article div img {
+    .maybe img {
         border: 2px solid black;
         height: 98%;
         width: 100%;

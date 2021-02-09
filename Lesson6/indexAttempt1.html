@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name='description' content="Ice Group Project">
         <meta name='veiwport' content='width=device-width, initial-scale-1.0'>
+        <link rel="shortcut icon" href="favicon.ico">
         <Title>Blue Skies Forecasting</Title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,16 +15,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Dancing+Script&family=Dosis:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="CSS/normalize.css">
-        <link href="IndexAttempt1.css" rel="stylesheet">
-        <link href="IndexAttempt1Medium.css" rel="stylesheet">
-        <link href="IndexAttempt1Large.css" rel="stylesheet">
-        <script src="JS/Menu.js"></script>
+        <link href="indexattempt1.css" rel="stylesheet">
+        <link href="indexattempt1medium.css" rel="stylesheet">
+        <link href="indexattempt1large.css" rel="stylesheet">
+        <script src="js/menu.js"></script>
     </head>
     <body>
         <div class="codesize"> 
 
             <header id="headbox">
-                <img src="Images/Blue Skies banner.jpg" alt="Blue Skies Title"/>
+                <span id='advertizement'></span>
+                <img src="images/blueskiesbanner.jpg" alt="Blue Skies Title"/>
                 <h2><br>Preston Idaho: Party on Cloud Nine</h2>
             </header> 
 
@@ -44,7 +46,7 @@
             <main>
                 <div id="heroImage">
                     <article>
-                        <img src="Images/MountainPic.jpg" alt="Overview of Mountains"/>
+                        <img src="images/mountainpic.jpg" alt="Overview of Mountains"/>
                     </article>
 
                     <article id="leftbox">                                                   <!-- Article leftbox  Start-->
@@ -59,25 +61,28 @@
                     </article>
                     
                     <article id="leftboxbottom">
-                        <img src="Images/SnowyTrees.jpg" alt="Snowy Forest"/>
+                        <img src="images/snowytrees.jpg" alt="Snowy Forest"/>
                     </article>
                 </div>
 
                 <article id="bestbox">                                                   <!-- Article bestbox Start -->
-                    <img src="Images/blueskieslogo.jpg" alt="Blue Skies Forecast Logo"/>
+                    <img src="images/blueskieslogo.jpg" alt="Blue Skies Forecast Logo"/>
                 </article>                                                   <!-- Article bestbox End -->
 
                 <div id="forecast">
                     <article id="toprightbox">
                         <h1>Five Day Forecast</h1>
+                        <div id='fivedayforecast'>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                        </div>
                     </article>
 
-                   <!-- <div id='fivedays'>
-                        
-                    </div> -->
-
                     <article id="bottomrightbox">
-                        <img src="Images/Coffepicture.jpg" alt="Coffee with Heart"/>
+                        <img src="images/coffepicture.jpg" alt="Coffee with Heart"/>
                     </article>
 
                     <article id="rightbox">                                                   <!-- Article rightbox Start -->
@@ -91,39 +96,38 @@
 
                 <div id="map">
                     <article>
-                        <h4>Contact information</h4>
-                        <p>	&#127820; (675)849-0303 <br>&#128231; 5768 st ths83392<br><i class="material-icons">add_location</i>Preston Idaho</p> 
-                        
-                        <section class="mediaImages" id='imageleft'>
-                            <img src="Images/Twitter.jpg" alt="twitter" class="media"/>
-                            <div id='overlayPictures'>
-                                <a href="#"></a>
-                            </div>
-                        </section>
-                        
-                        <section class="mediaImages" id="imageCenter">
-                            <img src="Images/Instagram.jpg" alt="instagram" class="media"/>
-                            <div id='overlayPictures'>
-                                <a href="#"></a>
-                            </div>
-                        </section>
-                        
-                        <section class="mediaImages" id='imageright'>
-                            <img src="Images/Facebook.jpg" alt="Facebook" class="media"/>
-                            <div id='overlayPictures'>
-                                <a href="#"></a>
-                            </div>
-                        </section>
-                        
+                            <h4>Contact information</h4>
+                            <p>	&#127820; (675)849-0303 <br>&#128231; 5768 st ths83392<br><i class="material-icons">add_location</i>Preston Idaho</p> 
+                            
+                            <section class="mediaImages" id='imageleft'>
+                                <img src="images/twitter.jpg" alt="twitter" class="media"/>
+                                <div class='overlayPictures'>
+                                    <a href="#"></a>
+                                </div>
+                            </section>
+                            
+                            <section class="mediaImages" id="imageCenter">
+                                <img src="images/instagram.jpg" alt="instagram" class="media"/>
+                                <div class='overlayPictures'>
+                                    <a href="#"></a>
+                                </div>
+                            </section>
+                            
+                            <section class="mediaImages" id='imageright'>
+                                <img src="images/facebook.jpg" alt="Facebook" class="media"/>
+                                <div class='overlayPictures'>
+                                    <a href="#"></a>
+                                </div>
+                            </section>
                     
-                        <img src="Images/blueskieslogo.jpg" alt="Blue Skies Forecast Logo" id="bottomPic"/>
-                        
-                        <div id='container'>
-                            <img src="Images/PrestonMap.jpg" alt="Preston map"/>
-                            <div id='overlay'>
-                                <a href="https://www.google.com/maps/place/Preston,+ID+83263/data=!4m2!3m1!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f?sa=X&ved=2ahUKEwidkofUutPuAhWltVkKHecYB98Q8gEwAHoECBQQAQ" target="_blank"></a>
+                            <img src="images/blueskieslogo.jpg" alt="Blue Skies Forecast Logo" id="bottomPic"/>
+                            
+                            <div class='maybe' id='container'>
+                                <img src="prestonmap.jpg" alt="Preston map"/>
+                                <div class='maybe' id='overlay'>
+                                    <a href="https://www.google.com/maps/place/Preston,+ID+83263/data=!4m2!3m1!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f?sa=X&ved=2ahUKEwidkofUutPuAhWltVkKHecYB98Q8gEwAHoECBQQAQ" target="_blank"></a>
+                                </div>
                             </div>
-                        </div>
                     </article>
                 </div>
             </main>
