@@ -255,3 +255,12 @@ footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, foot
 footer p, footer a {
     font-size: 125%;
 }
+
+article p, article a, article li {
+    padding: 0 2.5% 0;
+    margin: 0;
+    font-size: 150%;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    list-style: none; /* Add this */
+    }
