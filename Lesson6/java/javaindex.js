@@ -51,8 +51,3 @@ window.addEventListener('load', (event)=> {
             ad.textContent = display;
         }
 })
-
-window.addEventListener('auxclick', (event)=> {
-    const ad = document.querySelector('.navig');
-    ad
-})

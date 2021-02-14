@@ -37,6 +37,10 @@ nav ul {
     background-color: rgb(255, 208, 0);   
 }
 
+nav ul li:nth-child(2) {
+    background-color:  rgb(219, 179, 0);
+}
+
 #navigation ul {
     list-style-type: none;
     display: grid;   
