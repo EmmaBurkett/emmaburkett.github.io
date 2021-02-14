@@ -6,20 +6,14 @@
         <meta name='veiwport' content='width=device-width, initial-scale-1.0'>
         <link rel="shortcut icon" href="favicon.ico">
         <Title>Blue Skies Forecasting</Title>
-
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Dancing+Script&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Dancing+Script&family=Dosis:wght@200&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
         <link rel="stylesheet" href="cssstuff/normalize.css">
         <link href="index.css" rel="stylesheet">
         <link href="indexmedium.css" rel="stylesheet">
         <link href="indexlarge.css" rel="stylesheet">
         <script src="java/javaindex.js"></script>
         <script src="java/windchill.js"></script>
+
     </head>
     <body>
         <div class="codesize"> 
@@ -47,17 +41,21 @@
             <main>
                 <div id="heroImage">
                     <article>
-                        <img src="image/mountain.jpg" alt="Overview of Mountains"/>
+                        <picture>
+                        <source srcset="image/franklynsky1small.jpg" media="(min-width: 500px) and (max-width: 599px)">
+                        <source srcset="image/Inkedfranklynskymedium.jpg" media="(min-width: 600px) and (max-width: 800px">
+                        <img src="image/franklynsky1.jpg"alt="sky"> 
+                        </picture>
                     </article>
 
                     <article id="leftbox">                                                   <!-- Article leftbox  Start-->
                         <h1>Weather Summary</h1>
                         <p>
                             Currently: Sunny<br>
-                            Hight: 32 &#176;F<br>
-                            Wind Chill: &#176;F<br>
+                            Hight: <span type='text' id='temp'>54</span> &#176;F<br>
+                            Wind Chill: <span id="windChill"></span>&#176;F<br>
                             Humidity: 69%<br>
-                            Wind Speed: 5mph
+                            Wind Speed: <span type='text' id="speed">12</span>mph
                         </p>
                     </article>
                     
@@ -140,5 +138,13 @@
             </footer>
 
         </div> <!--end class a-->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+        <script>
+        WebFont.load({
+            google: {
+            families: ['Dosis', 'Dancing Script', 'Shadows Into Light', 'bondi Moda', 'Material Icons' ]
+            }
+        });
+        </script>
     </body>
 </html>
