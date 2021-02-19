@@ -1,0 +1,54 @@
+@media only screen and (min-width: 376px) {
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 100px);
+    }
+
+    img {
+        width: 100%;
+        height: 100px;
+    }
+
+    picture img {
+        height: 203px;
+    }
+
+    .back {
+        min-width: 75px;
+        min-height: 100px;
+    }
+
+    .red {
+        min-width: 100px;
+        min-height: 203px;
+    }
+
+    .backblue::before {
+        left: -100px;
+        width: 100px;
+    }
+
+    .pic::before {
+        left: -203px;
+        width: 203px;
+    }
+
+    @keyframes load {
+        0% {
+            left: -100px;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+
+    @keyframes loada {
+        0% {
+            left: -203px;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+}
