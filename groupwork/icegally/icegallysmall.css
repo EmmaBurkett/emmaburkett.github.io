@@ -12,7 +12,8 @@ body {
 }
 
 img, picture img {                                   /*adjust image sizes*/
-
+    /* really cool code from peer that I've selfishly stolen and will keep.
+    -webkit-filter: grayscale(1); */
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -21,6 +22,11 @@ img, picture img {                                   /*adjust image sizes*/
     background: grey;
 }                                      /*end adjust image sizes*/
 
+/* really cool code from peer that I've selfishly stolen and will keep.
+img:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    } */
 
 .back {                                  /*background img color stuff*/
     background-color: rgb(72, 212, 255);
