@@ -1,54 +1,79 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 32.5em) {   
     #grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, 100px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 250px);
     }
 
-    img {
+    section:nth-child(1) {                /* placement on grid*/
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    section:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    section:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    section:nth-child(4) {
+        grid-row: 2;
+        grid-column: 2;
+    }                  
+    
+    section:nth-child(5) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    section:nth-child(6) {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    
+    section:nth-child(7) {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    
+    section:nth-child(8) {
+        grid-row: 4;
+        grid-column: 2;
+    }
+    
+    section:nth-child(9) {
+        grid-row: 5;
+        grid-column: 1;
+    }                                   
+    
+    section:nth-child(10) {
+        grid-row: 5;
+        grid-column: 2;
+    }                    
+
+    img, picture img {
         width: 100%;
-        height: 100px;
+        height: 250px;
     }
 
-    picture img {
-        height: 203px;
+    .back, .red {
+        min-width: 175px;
+        min-height: 250px;
     }
 
-    .back {
-        min-width: 75px;
-        min-height: 100px;
+    .backblue::before, .pic::before {
+        left: -300px;
+        width: 250px;
     }
 
-    .red {
-        min-width: 100px;
-        min-height: 203px;
-    }
-
-    .backblue::before {
-        left: -100px;
-        width: 100px;
-    }
-
-    .pic::before {
-        left: -203px;
-        width: 203px;
-    }
-
-    @keyframes load {
+    @keyframes load, loada {
         0% {
-            left: -100px;
+            left: -250px;
         }
         100% {
             left: 100%;
         }
     }
-
-    @keyframes loada {
-        0% {
-            left: -203px;
-        }
-        100% {
-            left: 100%;
-        }
-    }
-}
