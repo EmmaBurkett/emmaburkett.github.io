@@ -4,33 +4,30 @@
         <meta charset="utf-8">
         <meta name='description' content="Ice Group Project">
         <meta name='veiwport' content='width=device-width, initial-scale-1.0'>
+        <link rel="shortcut icon" href="favicon.ico">
         <Title>Blue Skies Forecasting</Title>
-
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Dancing+Script&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Dancing+Script&family=Dosis:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS/normalize.css">
-        <link href="cssstuff/sunnysidesmall.css" rel="stylesheet">
-        <link href="cssstuff/sunnysidemedium.css" rel="stylesheet">
-        <link href="cssstuff/sunnysidelarge.css" rel="stylesheet">
-        <script src="java/menu.js"></script>
+    
+        <link rel="stylesheet" href="cssstuff/normalize.css">
+        <link href="index.css" rel="stylesheet">
+        <link href="indexmedium.css" rel="stylesheet">
+        <link href="indexlarge.css" rel="stylesheet">
+        <script src="java/javaindex.js"></script>
         <script src="java/windchill.js"></script>
+
     </head>
     <body>
         <div class="codesize"> 
 
             <header id="headbox">
-                <img src="blueskieslogospecial.jpg" alt="Blue Skies Title"/>
+                <span id='advertizement'></span>
+                <img src="image/blueskiesbanner.jpg" alt="Blue Skies Title"/>
                 <h2><br>Preston Idaho: Party on Cloud Nine</h2>
             </header> 
 
                  
             <nav id="navigation">                                                   <!-- Tool Bar Start -->
                 <ul>
-                    <li><a href="#" class="ham">Menu &#9776;</a></li>
+                    <li><a href="#" class="ham">&#9776;</a></li>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="#">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
@@ -42,33 +39,116 @@
             
 
             <main>
-                <div class="content">                                                   <!-- Article leftbox  Start-->
-                    <h1>Hero w/ Weather Summary</h1>
-                </div>                                            <!-- Article bestbox End -->
+                <div id="heroImage">
+                    <article>
+                        <picture>
+                        <source srcset="image/franklynsky1small.jpg" media="(max-width: 599px)">
+                        <source srcset="image/Inkedfranklynskymedium.jpg" media="(min-width: 600px) and (max-width: 800px">
+                        <img src="image/franklynsky1.jpg" alt="sky"> 
+                        </picture>
+                    </article>
 
-                <div class="content">
-                    <h1>5 Day Forecast</h1>
-                </div class="content">
+                    <article id="leftbox">                                                   <!-- Article leftbox  Start-->
+                        <h1>Weather Summary</h1>
+                        <p>
+                            Currently: Sunny<br>
+                            Hight: <span type='text' id='temp'>54</span> &#176;F<br>
+                            Wind Chill: <span id="windChill"></span>&#176;F<br>
+                            Humidity: 69%<br>
+                            Wind Speed: <span type='text' id="speed">12</span>mph
+                        </p>
+                    </article>
+                    
+                    <article id="leftboxbottom">
+                        <img src="image/snowytree.jpg" alt="Snowy Forest"/>
+                    </article>
+                </div>
 
-                <div class="content">                                                   <!-- Article rightbox Start -->
-                    <h1>Article</h1>
-                </div>    
+                <article id="bestbox">                                                   <!-- Article bestbox Start -->
+                    <img src="image/blueskieslogo.jpg" alt="Blue Skies Forecast Logo"/>
+                </article>                                                   <!-- Article bestbox End -->
 
-                <div class="content">                                                   <!-- Article rightbox Start -->
-                    <h1>Contact Information</h1>
-                </div>    
-                
-                <div id="bestbox">                                                   <!-- Article bestbox Start -->
-                    <img src="images/blueskieslogo.jpg" alt="Blue Skies Forecast Logo" id="grid-img"/>
-                </div>                  
+                <div id="forecast">
+                    <article id="toprightbox">
+                        <h1>Five Day Forecast</h1>
+                        <div id='fivedayforecast'>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                            <img src="sunweatherlogo.jpg" alt="Sun"/>
+                        </div>
+                    </article>
+
+                    <article id="bottomrightbox">
+                        <img src="image/coffeepicture.jpg" alt="Coffee with Heart"/>
+                    </article>
+
+                    <article id="rightbox">                                                   <!-- Article rightbox Start -->
+                        <p>It's getting cold, so get ready to go to all of your favorite Cafes!
+                            There's one on ____ street, with a pretty nook for reading or tearing 
+                            your hair out while working on an assignment.
+                            <br> Some other great places to visit is this fancy resturant owned
+                            by these adourable people. Look at their heart shaped creamer,
+                            garuteed to make you smile. 
+                            <br> Yay yayayayayayay
+                        </p>
+                    </article>                     
+
+                </div>
+
+                <div id="map">
+                    <article>
+                            <h4>Contact information</h4>
+                            <p>	&#127820; (675)849-0303 <br>&#128231; 5768 st ths83392<br><i class="material-icons">add_location</i>Preston Idaho</p> 
+                            
+                            <section class="mediaImages" id='imageleft'>
+                                <img src="image/logotwitter.jpg" alt="twitter" class="media"/>
+                                <div class='overlayPictures'>
+                                    <a href="#"></a>
+                                </div>
+                            </section>
+                            
+                            <section class="mediaImages" id="imageCenter">
+                                <img src="image/logoinstagram.jpg" alt="instagram" class="media"/>
+                                <div class='overlayPictures'>
+                                    <a href="#"></a>
+                                </div>
+                            </section>
+                            
+                            <section class="mediaImages" id='imageright'>
+                                <img src="image/logofacebook.jpg" alt="Facebook" class="media"/>
+                                <div class='overlayPictures'>
+                                    <a href="#"></a>
+                                </div>
+                            </section>
+                    
+                            <img src="image/blueskieslogo.jpg" alt="Blue Skies Forecast Logo" id="bottomPic"/>
+                            
+                            <div class='maybe' id='container'>
+                                <img src="map.JPG" alt="Preston map"/>
+                                <div class='maybe' id='overlay'>
+                                    <a href="https://www.google.com/maps/place/Preston,+ID+83263/data=!4m2!3m1!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f?sa=X&ved=2ahUKEwidkofUutPuAhWltVkKHecYB98Q8gEwAHoECBQQAQ" target="_blank"></a>
+                                </div>
+                            </div>
+                    </article>
+                </div>
             </main>
 
 
             <footer>
-                <p class='legal'>&copy; Blue Skies Forecasting | Attributions | Emma L. Burkett<br>
+                <p class='legal'>&copy; <span id='copyrightyear'></span> | Emma L. Burkett | Florida | <a href="https://www.byui.edu/online" target="_blank">Blue Skies Forecasting</a><br>
                 <span id='lastupdated'></span></p>
             </footer>
 
         </div> <!--end class a-->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+        <script>
+        WebFont.load({
+            google: {
+            families: ['Dosis', 'Dancing Script', 'Shadows Into Light', 'bondi Moda', 'Material Icons' ]
+            }
+        });
+        </script>
     </body>
 </html>

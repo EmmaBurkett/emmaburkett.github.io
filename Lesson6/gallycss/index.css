@@ -1,0 +1,207 @@
+.codesize {
+    width: 100%;
+    margin: auto;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header img {                        /*header*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: rgb(0, 86, 169);
+    font-size: 200%;
+    text-align: center;
+    background-image: linear-gradient(white, rgb(255, 208, 0)); 
+    margin: 0;
+    padding: 0;
+}                                                           /*header*/
+
+nav ul {                                                       /*nav*/
+    margin: 0 auto;
+    background-color: rgb(255, 208, 0);   
+}
+
+nav ul li:nth-child(2) {
+    background-color:  rgb(219, 179, 0);
+}
+
+#navigation ul {
+    list-style-type: none;
+    display: grid;   
+    grid-template-columns: 1fr;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#navigation ul li:first-child {
+    display: block;
+    text-align: right;
+}
+
+#navigation ul li {
+    display: none;
+}
+
+#navigation ul a:link,
+#navigation ul a:visited,
+#navigation ul a:hover,
+#navigation ul a:active,
+#navigation ul a:focus {
+    display: block;
+    font-size: 200%;
+    text-decoration: none;
+    color: rgb(19, 105, 180);
+    margin: 0;
+    padding: 0;
+}
+
+#navigation a:hover {
+    background-color: rgb(255, 247, 210);
+    color: rgb(6, 139, 255);
+}
+
+#navigation.responsive li {
+    display: block;
+    text-align: center;
+}                                                           /*nav*/
+
+h2 {                                                        /*weather gallery*/
+    padding: 0 2.5% 0;
+    margin: 2% 2% 0% 2%;
+    font-size: 350%;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    list-style: none;
+}                                                           /*Weather Gallery*/
+
+#grid {                                                     /*picture display*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 10% 5%;
+    padding: none;
+}
+
+.pic {
+    margin: 5%;
+    padding-bottom: 5%;
+    box-shadow: 0 0 8px #333;
+    -webkit-filter: grayscale(1);
+}
+
+.pic p {
+    margin-top: 2%;
+}
+
+.pic:hover {
+    box-shadow: 0 0 50px #333;
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+.pic img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}                                                               /*picture display*/
+
+article p, article a, article li, section p {                             /*map*/
+    padding: 0 2.5% 0;
+    margin: 0;
+    font-size: 150%;
+    color: rgb(83, 83, 83); 
+    font-weight: bold;
+    list-style: none;
+}
+
+article h1 {
+    text-align: center;
+    padding-top: 5%;
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(0, 89, 169);
+}
+
+#map {
+    background:rgb(255, 208, 0);
+    margin: 2.5% 0 0; 
+    padding: 1% 2% 3%; 
+    text-align: center;
+    color: rgb(19, 105, 180);
+}
+
+#map h4, #map p {
+    text-align: left;
+    padding-left: 9%;
+    padding-bottom: 5%;
+}
+
+#map h4 {
+    font-size: 150%;
+    margin-top: 5%;
+    padding-bottom: 0;
+}
+
+.mediaImages {
+    display: none;
+}
+
+#bottomPic {
+    display: none;
+}
+
+#container {
+    position: relative;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    margin-left: 10%;
+    height: auto;
+}
+
+.maybe img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border: 1px solid black;
+}
+
+
+#overlay a {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: 95.3%;
+    opacity: 0;
+    background: white;
+}
+
+#container:hover #overlay a {
+    opacity: .5;
+}                                                           /*map*/
+
+footer {                                                    /*footer*/
+    background:rgb(255, 208, 0);
+    margin: 0;
+    padding: 1% 2% 1%;
+    text-align: center;
+    color: rgb(19, 105, 180);
+}
+
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+    color: rgb(19, 105, 180);
+}
+
+footer p, footer a {
+    font-size: 125%;
+}                                                           /*footer*/
