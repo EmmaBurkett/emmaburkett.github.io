@@ -105,7 +105,6 @@ h2 {                                                        /*weather Title*/
 }
 
 .pic:hover {
-    box-shadow: 0 0 50px #333;
     -webkit-filter: grayscale(0);
     filter: none;
 }
