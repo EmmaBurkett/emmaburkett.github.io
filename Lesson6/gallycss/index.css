@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+#gray { 
+    -webkit-filter: grayscale(1);
+}
+
 header img {                        /*header*/
     width: 100%;
     margin: 0;
@@ -28,7 +32,7 @@ nav ul {                                                       /*nav*/
     background-color: rgb(255, 208, 0);   
 }
 
-nav ul li:nth-child(2) {
+nav ul li:nth-child(7) {
     background-color:  rgb(219, 179, 0);
 }
 
@@ -73,19 +77,18 @@ nav ul li:nth-child(2) {
     text-align: center;
 }                                                           /*nav*/
 
-h2 {                                                        /*weather gallery*/
+h2 {                                                        /*weather Title*/
     padding: 0 2.5% 0;
     margin: 2% 2% 0% 2%;
-    font-size: 350%;
+    font-size: 275%;
     color: rgb(83, 83, 83);
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
     list-style: none;
-}                                                           /*Weather Gallery*/
+}                                                           /*Weather Title*/
 
 #grid {                                                     /*picture display*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 10% 5%;
     padding: none;
 }
@@ -110,8 +113,8 @@ h2 {                                                        /*weather gallery*/
 .pic img {
     object-fit: cover;
     width: 100%;
-    height: 200px;
-}                                                               /*picture display*/
+    height: 250px;
+}                                                                         /*picture display*/
 
 article p, article a, article li, section p {                             /*map*/
     padding: 0 2.5% 0;
@@ -128,6 +131,12 @@ article h1 {
     margin: 0;
     font-family: 'Shadows Into Light', cursive;
     color: rgb(0, 89, 169);
+}
+
+footer {
+    -webkit-filter: grayscale(1);
+    padding: none;
+    margin: none;
 }
 
 #map {

@@ -39,15 +39,10 @@ window.addEventListener('load', (event)=> {
     lu.textContent = date;
 })
 
-window.addEventListener('load', (event)=> {
-    
-    var d = new Date();
-    var n = d.getDay()
+window.addEventListener('load', ()=> {                                                          /*why does this activate all of my onclick java code?*/
+    var head = document.querySelector("#gray");
+    head, addEventListener('mousedown', ()=>{head.style.filter = "grayscale(0)";}, false);
 
-    const ad = document.querySelector('#advertizement');
-
-    if (n == 5) {
-            let display = "Saturday: Preston Pancakes at the Park! 9:00 a.m. at the city park Pavilion";
-            ad.textContent = display;
-        }
+    var foot = document.querySelector('footer');
+    foot, addEventListener('mousedown', ()=>{foot.style.filter = "grayscale(0)";}, false);
 })
