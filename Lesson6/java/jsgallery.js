@@ -41,8 +41,8 @@ window.addEventListener('load', (event)=> {
 
 window.addEventListener('load', ()=> {                                                          /*why does this activate all of my onclick java code?*/
     var head = document.querySelector("#gray");
-    head, addEventListener('mousedown', ()=>{head.style.filter = "grayscale(0)";}, false);
+    head.addEventListener('mousedown', ()=>{head.style.filter = "grayscale(0)";}, false);
 
     var foot = document.querySelector('footer');
-    foot, addEventListener('mousedown', ()=>{foot.style.filter = "grayscale(0)";}, false);
+    foot.addEventListener('mousedown', ()=>{foot.style.filter = "grayscale(0)";}, false);
 })
