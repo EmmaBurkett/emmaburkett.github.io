@@ -36,12 +36,13 @@ img {
     font-family: 'Coming Soon', cursive;
     display: grid;
     grid-template-columns: 300px 400px;
+    grid-template-rows: 1fr 1fr;
 }
 #dad-joke {
     align-self: center;
     font-size:35px;
+    grid-row: 1/span2;
     padding-left:50px;
-    margin-bottom: 30%;
 }
 #dad-joke.small {
     font-size: 25px;
