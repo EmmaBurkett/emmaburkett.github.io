@@ -37,6 +37,7 @@ img {
     display: grid;
     grid-template-columns: 300px 400px;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0 0 50px black;
 }
 #dad-joke {
     align-self: center;
