@@ -27,8 +27,6 @@ section {
     padding: 5%;
     border-radius: 10%;
     box-shadow: 0 0 15px rgb(72, 72, 72);
-    display: grid;
-    grid-template-rows:repeat(auto-fill, minmax(200px,.1fr)); /* honestly cannot believe that this aligned my pictures. But I am grateful for it nonetheless (thought it's still a little weird.*/
 }
 section:hover {
     background: gold;
@@ -60,6 +58,10 @@ footer:hover {
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    section {
+        display: grid;
+        grid-template-rows:repeat(auto-fill, minmax(200px,.1fr)); /* honestly cannot believe that this aligned my pictures. But I am grateful for it nonetheless (thought it's still a little weird.*/
     }
 }
 
