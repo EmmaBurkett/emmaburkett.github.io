@@ -1,0 +1,9 @@
+body {
+    font-family: ubuntu, sans-serif;
+}
+thead {
+    background: #7fb9c2;
+}
+thead tr th {
+    padding: 5%;
+}
