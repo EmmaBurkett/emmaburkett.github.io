@@ -9,7 +9,7 @@ fetch(requestURL)
     const prophets = jsonObject['prophets'];
     for (let i = 0; i < prophets.length; i++ ) {  // temporary checking for valid response and data parsing
         let card = document.createElement('section'); //creates a <section> tag </section>
-        let wordContainer = document.createElement('div');
+        let wordContainer = document.createElement('div'); //extra stuff for me, ignore it, pretend it's not there. XD
         let h2Name = document.createElement('h2');
         let pDate = document.createElement('p');
         let pPlace = document.createElement('p');
@@ -19,10 +19,10 @@ fetch(requestURL)
         pDate.textContent = "Date of Birth: " + prophets[i].birthdate;
         pPlace.textContent = "Place of Birth: " + prophets[i].birthplace;
 
-        card.appendChild(wordContainer);
-        wordContainer.appendChild(h2Name); // puts <h2></h2> inside our <section> tag <h2></h2> </section>
-        wordContainer.appendChild(pDate);
-        wordContainer.appendChild(pPlace);
+        card.appendChild(wordContainer); //pretend this doesn't exist lol
+        wordContainer.appendChild(h2Name); // puts <h2></h2> inside our <section> tag <h2></h2> </section> //pretend wordContainer.appendChild(h2Name); is card.appendChild(h2Name);
+        wordContainer.appendChild(pDate);//pretend wordContainer. is card.
+        wordContainer.appendChild(pPlace);//pretend wordContainer. is card.
         card.appendChild(image); //<section> <h2></h2> <p></p> <p></p> <img> <section> //<section> = card
 
         image.setAttribute('src', prophets[i].imageurl); //manipulates html that we created above for the image!
