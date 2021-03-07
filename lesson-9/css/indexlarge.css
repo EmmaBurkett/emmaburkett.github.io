@@ -39,6 +39,10 @@
     }
     #large {
         display: block;
+        height: 1000px;
+        object-fit: cover;
+        width: 100%;
+        
     }
     .cards section {
         display: grid;
