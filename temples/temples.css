@@ -1,0 +1,15 @@
+body {
+    width: calc(100%-15px);
+    padding: 0 auto;
+    margin: 0;
+}
+section {
+    text-align: center;
+}
+img {
+    border: 5px solid gold;
+    box-shadow: 0 0 15px rgb(95, 165, 205);
+}
+img:hover {
+    box-shadow: 0 0 15px gold;
+}

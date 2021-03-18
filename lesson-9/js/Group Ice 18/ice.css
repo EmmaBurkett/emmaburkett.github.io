@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body {
+    width: 100%;
+    background-color: black;
+
+}
+#ice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}   
+
+h1{
+    color: white;
+}
+
+.events-card{
+    background-color: #eee;
+    background-image: url('../group Ice 18/background.jpg');
+    border-radius: 10px;
+    text-align: center;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+/*
+<section id="ice>
+<h2>${event.properties.name}</h2>
+<p>Start: <b>${event.properties.start}</b> to <b>${event.properties.end}<b></p>
+<p><b>${event.tags}</b></p>
+<p><b>${event.properties.summary}</b></p>`; */
