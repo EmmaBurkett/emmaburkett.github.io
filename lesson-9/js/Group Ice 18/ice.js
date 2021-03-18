@@ -1,6 +1,6 @@
 window.addEventListener('load', ()=>{
 
-    const requestURL = 'http://www.ahfx.com/events.php'
+    const requestURL = 'https://www.ahfx.com/events.php'
     fetch (requestURL)
         .then((response)=>{
             return response.json();
