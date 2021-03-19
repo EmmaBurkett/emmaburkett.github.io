@@ -1,9 +1,43 @@
 body {
-    font-family: ubuntu, sans-serif;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
-thead {
+thead, tfoot {
     background: #7fb9c2;
 }
-thead tr th {
-    padding: 5%;
+thead th {
+    padding: 3%;
+    font-size: 160%;
+}
+thead tr td {
+    font-style:normal;
+}
+tfoot {
+    font-size: 75%;
+}
+tfoot td {
+    padding: 2.5%;
+}
+table, th, td {
+    border: 1px solid rgb(162, 162, 162);
+}
+.users {
+    width: 230px;
+    height: 260px;
+    border-collapse: collapse; /*no spaces between table lines?*/
+    font-size: 14px;
+    margin: 0 auto; /*center*/ 
+    margin-top: 5%;
+    box-shadow: 5px 5px 8px #527e85;
+}
+tbody tr {
+    background: #e7ffed; 
+}
+.blue {
+    background: #628ca6;
+    color: white;
+}
+tbody tr:nth-child(even) {
+    background: #e7f0ed;
 }
