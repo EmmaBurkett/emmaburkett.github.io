@@ -22,7 +22,7 @@ tfoot td {
 table, th, td {
     border: 1px solid rgb(162, 162, 162);
 }
-.users {
+table {
     width: 230px;
     height: 260px;
     border-collapse: collapse; /*no spaces between table lines?*/
