@@ -1,0 +1,77 @@
+@media only screen and (min-width: 35.5em) {
+    h2 {                                                        /*weather Title*/
+        padding: 0 2.5% 0;
+        margin: 2% 2% 0% 2%;
+        font-size: 250%;
+    }                                                           /*Weather Title*/
+
+    .cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cards section:nth-child(even) div {
+        grid-column: 2;
+    }
+    .cards section:nth-child(even) img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    main div h2 {
+        display: block;
+    }
+    main div {
+        margin: auto;
+    }
+    main section:nth-child(odd) {
+        clip-path: 
+        polygon(
+          0% 0%,     /* top left */
+          0% 0%,     /* top left */
+          100% 0%,    /* top right */
+          100% 0%,   /* top right */
+          100% 100%,  /* bottom right */
+          100% 100%,  /* bottom right */
+          0% 100%,   /* bottom left */
+          0% 100%      /* bottom left */
+        );
+    }
+    main section:nth-child(even) {
+        clip-path: 
+        polygon(
+          0% 0%,     /* top left */
+          0% 0%,     /* top left */
+          100% 0%,    /* top right */
+          100% 0%,   /* top right */
+          100% 100%,  /* bottom right */
+          100% 100%,  /* bottom right */
+          0% 100%,   /* bottom left */
+          0% 100%      /* bottom left */
+        );
+    }
+    main section img { /*images*/
+        width: 100%;
+        min-height: 350px;
+        max-height: 800px;
+        object-fit: cover;
+    }
+    .gridTop {
+        display: grid;
+    }
+    .even {
+        grid-row: 1;
+    }
+    .odd {
+        display: block;
+        position: relative;
+        background:rgb(241, 241, 241);
+        margin: 10% 5% 10% 5%;
+        padding: 1% 5% 3%;
+    }
+    .odd img {
+        width: 50%;
+        height: 220px;
+        object-fit: cover;
+        float: left;
+    }
+    
+}

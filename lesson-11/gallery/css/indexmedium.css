@@ -1,0 +1,27 @@
+@media only screen and (min-width: 35.5em) {
+    h2 {                                                        /*weather Title*/
+        padding: 0 2.5% 0;
+        margin: 2% 2% 0% 2%;
+        font-size: 250%;
+    }                                                           /*Weather Title*/
+    
+    #grid {                                                     /*picture display*/
+        grid-template-columns: 1fr 1fr;
+        margin: 0 10% 5%;
+    }
+    
+    .pic {
+        margin: 5%;
+        padding-bottom: 5%;
+        box-shadow: 0 0 8px #333;
+    }
+    
+    .pic p {
+        margin-top: 2%;
+    }
+
+    .pic img {
+        width: 100%;
+        height: 150px;
+    }                        
+}
