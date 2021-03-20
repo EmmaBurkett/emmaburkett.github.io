@@ -1,0 +1,131 @@
+@media only screen and (min-width: 45.5em) {
+    nav ul {                                                    /*nav*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    #navig {
+        display: none;
+        border-bottom: 1px solid black;
+    }
+
+    nav ul li a {
+        padding: 10%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navigation ul {
+        grid-template-columns: repeat(6, auto);
+        font-size: 100%;
+        padding-top: 5%;
+    }
+
+    #navigation ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #navigation ul li:first-child {
+        display: none;
+    }                                                           /*nav*/
+
+    h2 {                                                        /*weather Title*/
+        padding: 0 2.5% 0;
+        margin: 2% 2% 0% 2%;
+        font-size: 350%;
+    }                                                           /*Weather Title*/
+
+    #footerInfo {                                                      /*footerInfo*/
+        margin: 0;
+    }
+
+    #footerInfo {
+        margin: 0 0 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+    }
+
+    .mediaImages {
+        display: block;
+        width: 30%;
+    }
+
+    .media {
+        border-radius: 50%;
+    }  /*intresting*/
+
+    #footerInfo section img {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    #gridInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #gridInfo article {
+        grid-column: 1/-1;
+    }
+
+    #bottomPic {
+        display: block;
+        width: 100%;
+    }
+
+    #bottomPic img {
+        display: block;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    #footerInfo article {
+        width: 100%;
+    }
+
+    .footerInfo {
+        width: 88%;
+    }
+    
+    .footerInfo img {
+        border: 2px solid black;
+        height: 98%;
+        width: 100%;
+    }                                                   /*footerInfo*/
+
+    footer {                                            /*footer*/
+        margin: 0% 0 0%; 
+    }  
+
+/*Padding fix on footer*/
+#footerInfo p, #footerInfo a, #footerInfo li, #footerInfo p {                            
+    padding: 0 0 0 0;
+}
+
+#footerInfo {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#footerInfo h4, #footerInfo p {
+    padding-left: 0;
+    padding-bottom: 0%;
+}
+
+#footerInfo h4 {
+    margin-top: 0%;
+    padding-bottom: 0;
+}
+
+footer {                                                    
+    margin: 0;
+    padding: 0 0 0 0;
+}
+}

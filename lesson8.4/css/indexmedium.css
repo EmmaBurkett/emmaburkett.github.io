@@ -1,0 +1,6 @@
+@media only screen and (min-width: 35.5em) {
+    h2 {                                                        /*weather Title*/
+        padding: 0 2.5% 0;
+        margin: 2% 2% 0% 2%;
+        font-size: 250%;
+    }                                                           /*Weather Title*/

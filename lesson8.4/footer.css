@@ -1,0 +1,322 @@
+.sizing {
+    width: 100%;
+    font-family: 'dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: rgb(0, 86, 196);
+    font-size: 200%;
+    text-align: center;
+    background-image: linear-gradient(white, rgb(255, 208, 0));
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    margin: 0 auto;
+    background-color: rgb(255, 208, 0);
+}
+
+#navigation ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Shadows Into Light', cursive;
+}
+#navigation ul li:first-child {
+    display: block;
+    text-align: right;
+}
+.breadcrums i {
+    color: white;
+    
+}
+#navigation ul li {
+    display: none;
+}
+#navigation ul a:link,
+#navigation ul a:visited,
+#navigation ul a:hover,
+#navigation ul a:active,
+#navigation ul a:focus {
+    display: block;
+    font-size: 200%;
+    text-decoration: none;
+    color: rgb(19, 105, 180);
+    margin: 0;
+    padding: 0;
+}
+#navigation a:hover {
+    background-color: rgb(255, 247, 210);
+    color: rgb(6, 139, 255);
+}
+#navigation.responsive li {
+    display: block;
+    text-align: center;
+}                                               /*end Nav*/
+footer {                                        /*footer*/
+    background:rgb(255, 208, 0);
+    padding: 1% 2% 1%;
+    color: rgb(19, 105, 180);
+}
+#contactInfo {
+    margin-left: 5%;
+}
+#twitter, #instagram, #facebook {
+    display: none;
+}
+#logo img {
+    width: 105px;
+    box-shadow: -2px 2px 5px;
+}
+#logo {
+    border-radius: 10%;
+    float: right;
+    width: 20%;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    z-index:20;
+    margin: 0 5% 10% 0;
+}
+#logo:before,
+#logo:after {
+    content:"";
+    background-color: rgb(19, 105, 180);
+    border-radius: 50%;
+    display:block;
+    position:absolute;
+    z-index: -1;
+}
+#logo:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:28px;
+    box-shadow:-50px 30px 0 -12px rgb(19, 105, 180);
+}
+#logo:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0   rgb(19, 105, 180),
+              -28px -6px 0 -2px rgb(19, 105, 180),
+              -24px 17px 0 -6px rgb(19, 105, 180),
+              -5px 25px 0 -10px rgb(19, 105, 180);
+    
+} 
+#iframe {
+    text-align: center;
+    margin: 0 5% 0 5%;
+}
+iframe {
+    box-shadow: 0 8px 15px grey;
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+}
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+    color: rgb(19, 105, 180);
+}
+
+footer p, footer a {
+    font-size: 125%;
+}     
+#footer {
+    text-align: center;
+}
+#stormPage {
+    display: none;
+}
+@media only screen and (min-width: 45.5em) {
+    #footerGrid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+    }
+    #logo {
+        margin: 0;
+        margin-left: 50%;
+        margin-top: 5%;
+        padding: 0;
+        grid-row: 1;
+        grid-column: 3;
+    }
+    #stormPage {
+        display: block;
+        grid-row: 1;
+        grid-column: 2;
+        padding: 1%;
+        font-size: 90%;
+        margin: 15% 0% 5% 5%;
+        border-radius: 20px;
+        background: rgb(19, 105, 180);
+        height: 50%;
+    }
+    #stormPage a:link,
+    #stormPage a:visited,
+    #stormPage a:hover,
+    #stormPage a:active,
+    #stormPage a:focus {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+    #iframe {
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+}
+@media only screen and (min-width: 60.5em) {
+    #navigation ul {
+        grid-template-columns: repeat(6, auto);
+        font-size: 100%;
+    }
+    header h2 {
+        padding-bottom: 2%;
+    }
+    #navigation ul li {
+        display: block;
+        text-align: center;
+        z-index: 100;
+        padding: 0;
+        padding-top: 18%;
+        margin: 0;
+    }
+    #navigation ul li:first-child {
+        display: none;
+    }
+    .breadcrums, #stormPage {
+        position:relative;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        z-index: 20;
+    }
+    .breadcrums:before, #stormPage:before,
+    .breadcrums:after,  #stormPage:after {
+        content:"";
+        background-color:#fff;
+        border-radius:50%;
+        display:block;
+        position:absolute;
+        z-index:-1;
+    }
+    .breadcrums:before, #stormPage:before {
+        width:44px;
+        height:44px;
+        top:-12px;
+        left:28px;
+        box-shadow:-50px 30px 0 -12px #fff;
+    }
+    .breadcrums:after, #stormPage:after {
+        bottom:-10px;
+        right:26px;
+        width:30px;
+        height:30px;
+        box-shadow:40px -34px 0 0   #fff,
+                  -28px -6px 0 -2px #fff,
+                  -24px 17px 0 -6px #fff,
+                  -5px 25px 0 -10px #fff;
+        
+    } 
+    #footerGrid {
+        display: grid; 
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 1.3fr 1fr;
+        text-align: center;
+    }
+    #iframe {
+        width: 100%;
+        grid-row: 1/ span 2;
+        grid-column: 1;
+        margin: auto auto auto;
+    }
+    iframe {
+        width: 90%;
+        max-width: 750px;
+        height: 400px;
+    }
+    #contactInfo {
+        grid-row: 1;
+    }
+    #logo img {
+        margin: 0;
+        padding: 0;
+        width: 105px;
+        box-shadow: -2px 2px 5px;
+    }
+    #logo {
+        float: none;
+        margin: 10% 0 0 35%;
+        padding: 0;
+        grid-row: 1;
+        grid-column: 3;
+    }
+    #twitter, #instagram, #facebook {
+        border-radius: 60%;
+        width: 40px;
+        box-shadow: 0 2px 3px grey;
+        display: block;
+    }
+    #mediaPic {
+        display: grid;
+        width: 65%;
+        margin: 0 auto 10% 22%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #stormPage {
+        width: 100%;
+        grid-row: 2;
+        grid-column: 2/ span 2;
+        background: rgb(19, 105, 180);
+        border-radius: 30px;
+        margin: 0;
+        padding:0;
+        margin-bottom: 7%;
+        z-index: 100;
+        height: 93%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #stormPage a:link,
+    #stormPage a:visited,
+    #stormPage a:hover,
+    #stormPage a:active,
+    #stormPage a:focus {
+        font-size: 200%;
+        margin: 0;
+        margin-bottom: 5%;
+        padding: 0;
+    }
+    #stormPage p {
+        padding-top: 5%;
+    }
+    #logo:before,
+    #logo:after {
+        background-color: #fff;
+    }
+    #logo:before {
+        box-shadow:-50px 30px 0 -12px #fff;
+    }
+    #logo:after {
+        box-shadow:40px -34px 0 0   #fff,
+                  -28px -6px 0 -2px #fff,
+                  -24px 17px 0 -6px #fff,
+                  -5px 25px 0 -10px #fff;
+    } 
+}
+
