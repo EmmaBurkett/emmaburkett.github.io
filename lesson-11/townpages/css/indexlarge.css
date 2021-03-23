@@ -73,6 +73,9 @@
     #forecastJava section {
         display: block;
     }
+    #forecastJava h1, #forecastJava p, #forecastJava img {
+        padding: 5%;
+    }
     #footerGrid {                       /*footer*/
         grid-template-columns: 3fr 1fr 1fr;
         grid-template-rows: 1.3fr 1fr;
@@ -127,7 +130,7 @@
         margin: 0;
         padding:1.7% 0 1.7%;
         z-index: 100;
-        height: 93%;
+        height: 81%;
         display: flex;
         justify-content: center;
         align-items: center;
