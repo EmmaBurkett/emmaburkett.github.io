@@ -55,8 +55,7 @@
 
     #forecast img {
         width: 60%;
-        margin: 0 auto;
-        padding: 5%;
+        margin: auto auto;
     }
 
     #bestbox {
