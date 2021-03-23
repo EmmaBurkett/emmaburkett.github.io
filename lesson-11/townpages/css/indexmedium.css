@@ -28,6 +28,7 @@
         height: 45%;
         margin: 5% 0 115% 5%;
         background: rgba(245, 245, 245, 0.728);
+        box-shadow: 0 2px 8px rgb(0, 46, 99);
         border: none;
     }
 
