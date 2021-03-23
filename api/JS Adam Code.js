@@ -1,13 +1,12 @@
 const cityID = "5604473";
 const units = "imperial";
-const key = "352e0185b01df25e978724a23f97f5f6";
+const key = "5b70937232e0e8d8c562b29e7c24a2c0";
 const requestURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&units="+units+"&appid="+key;
 
 
 // function makeFood() {return "Milk and Enzymes (stomach acid)";}
 // cheese = makeFood();
 // console.log(cheese);
-
 // makeFood.then(console.log(input));
 
 fetch(requestURL)

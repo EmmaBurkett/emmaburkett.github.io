@@ -54,8 +54,8 @@
                   -24px 17px 0 -6px #fff,
                   -5px 25px 0 -10px #fff;
         
-    } 
-    #footerGrid {
+    }                                   /*end nav*/
+    #footerGrid {                       /*footer*/
         grid-template-columns: 3fr 1fr 1fr;
         grid-template-rows: 1.3fr 1fr;
         text-align: center;
