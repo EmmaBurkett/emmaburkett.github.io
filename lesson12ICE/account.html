@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/account.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="account.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="blue">
+            <ul class="progress">
+                <li><span class="material-icons">check_circle</span></li>
+                <li><hr></li>
+                <li>&bull;</li>
+                <li><hr></li>
+                <li>&#9675;</li>
+            </ul>
+            <div class="pProgress">
+                <p>Shipping</p> 
+                <p>Payment details</p>
+                <p>Checkout</p>
+            </div>
+        </div>
+        <header>
+        </header>
+        <main> 
+            <h1 id="header">Order Summary</h1>
+            <section id="top">
+                <p class="upperCase">order subtotal</p>
+                <p class="money">$ 46.95</p>
+                <p class="upperCase">shipping & handling</p>
+                <p class="money">$ 6.00</p>
+                <p class="upperCase">sales tax</p>
+                <p class="money">$ 8.05</p>
+                <p><hr></p>
+                <p class="upperCase">payment due</p>
+                <p class="blueMoney">$ 61.00</p>
+
+                <a href="#">Return to cart</a>
+            </section>
+        </main>
+        
+        <footer>
+            <div id="triangle"></div>
+            <section id="bottom">
+                <img id="card" src="visa.jpg" name="card" alt="Visa Logo"> <!--Toggle with java!!!-->
+                <h1>Payment Details</h1>
+                <form method="get" action="thanks.html">
+                    <div class="input">
+                        <label for="fullname">CARDHOLDER NAME</label><input id="fullname" type="text" placeholder="Alexis Johnson">
+                    </div>
+
+                    <div class="input">
+                        <label for="ccnum">CARD NUMBER</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1234-5678-9012-3456" required pattern=[0-9\-]{16,19}> <!--How do I make this an 'or' '16 or 19' vs. '16-19'?-->
+                    </div>
+                    <div class="grrrr">
+                        <label id="font">EXPIRATION DATE
+                            <div id="grrrrFix">
+                                <div class="input">
+                                    <label class="underlined">MONTH
+                                        <select id="month" name="month" required>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="input">
+                                    <label class="underlined">YEAR
+                                        <select id="year" name="year" required>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                        </label>
+                        <div class="input" id="cvv">
+                            <label for="cvv">CVV</label>
+                            <input type="password" id="cvv" name="cvv" placeholder="&bull; &bull; &bull;" pattern="[0-9]{3}" required>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="billing">BILLING ADDRESS</label>
+                        <input type="text" id="billing" name="billing" placeholder="25 Bloor St E, Toronto, ON">
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="same" name="same">
+                        <label for="same">Same as shipping address</label>
+                    </div>
+                    <button class="button1">
+                        Next
+                    </button>
+                    <button type="reset" class="button2">
+                        Cancel
+                    </button>
+                </form>
+                <p class="footer"> <span class="material-icons">
+                    enhanced_encryption
+                    </span>This is a secure transaction</p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
