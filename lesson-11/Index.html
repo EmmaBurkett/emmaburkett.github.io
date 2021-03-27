@@ -3,41 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='Preston Home Page' content="Preston, Soda Springs, Fish Haven">
+    <meta name='Storm Center' content="Storm warning sign up">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <title>Weather Home Page</title>
+    <link rel="shortcut icon" href="images/faicon.ico">
+    <title>Home Page</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link href="home/css/indexcss.css" rel="stylesheet">
     <link href="home/css/indexmedium.css" rel="stylesheet">
     <link href="home/css/indexlarge.css" rel="stylesheet">
     <script src="home/js/index.js"></script>
+ 
 </head>
-<body>
-    <header id="headbox">
-        <span id='advertizement'></span>
-        <img src="home/images/blueskiesbanner.jpg" alt="Blue Skies Title"/>
+<body class="sizing"> 
+    <header>
+        <span id="advertizement"></span> 
+        <img src="images/blueskiesbanner.jpg" alt="Blue Skies Title"/>
         <h2><br>Preston Idaho: Party on Cloud Nine</h2>
-    </header> 
+    </header>
 
-         
     <nav id="navigation">
         <ul>
-            <li><a href="#" class="ham">&#9776;</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href='#' class="ham">&#9776;</a></li>
+            <li><a href="index.html"><div class="breadcrums"><i class="material-icons">fiber_manual_record</i>Home</div></a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormCenter">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
-
+ 
     <main>
-        <img src="home/images/background.jpg" alt="starry night with a jar capturing the light" class="imgBack" id="small">
-        <img src="home/images/largebackground.jpg" alt="Starry Night in a purple color over a field" class="imgBack" id="large">
         <div class="cards"></div>
         <div class="gridTop">
             <article class="odd">
@@ -58,60 +56,52 @@
                 <p>Local surviver-expert, Joe Dangerfield, at Soda Springs will take you face to face with the dangrous Monarch Butterfly!<br> Reach him @StudioC.com</p>
             </article>
         </div>
-        <div class="box"></div>
     </main>
 
 
     
     <footer>
-        <div class='bottom'>
-            <div id="map">
-                <article>
-                    <h4>Contact information</h4>
-                    <p>	&#127820; (675)849-0303 <br>&#128231; 5768 st ths83392<br><i class="material-icons">add_location</i>Preston Idaho</p> 
-                    
-                    <section class="mediaImages" id='imageleft'>
-                        <img src="home/images/logotwitter.jpg" alt="twitter" class="media"/>
-                        <div class='overlayPictures'>
-                            <a href="#"></a>
-                        </div>
-                    </section>
-                    
-                    <section class="mediaImages" id="imageCenter">
-                        <img src="home/images/emoji.jpg" alt="instagram" class="media"/>
-                        <div class='overlayPictures'>
-                            <a href="#"></a>
-                        </div>
-                    </section>
-                    
-                    <section class="mediaImages" id='imageright'>
-                        <img src="home/images/logofacebook.jpg" alt="Facebook" class="media"/>
-                        <div class='overlayPictures'>
-                            <a href="#"></a>
-                        </div>
-                    </section>
-            
-                    <img src="home/images/blueskieslogo.jpg" alt="Blue Skies Forecast Logo" id="bottomPic"/>
-                    
-                    <div class='maybe' id='container'>
-                        <img src="home/images/map.JPG" alt="Preston map"/>
-                        <div class='maybe' id='overlay'>
-                            <a href="https://www.google.com/maps/place/Preston,+ID+83263/data=!4m2!3m1!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f?sa=X&ved=2ahUKEwidkofUutPuAhWltVkKHecYB98Q8gEwAHoECBQQAQ" target="_blank"></a>
-                        </div>
-                    </div>
-                </article>
+        <div id="footerGrid">
+
+            <div id="logo"><img id="logo" src="images/blueskieslogosquare.jpg" alt="Blue Skies Forecast Logo"/></div>
+
+            <div id="stormPage">
+                <p>
+                    <a href="stormcenter.html">Sign Up for Storm Warnings <U>Here!</U></a>
+                </p>
             </div>
+
+            <div id="contactInfo">
+                <h4>Contanct Infomation</h4>
+                <p>&#127820; (675)849-0303<br>&#128231; 5768 Whatever ST<br><i class="material-icons">add_location</i>Preston Idaho</i></p>
+
+                <div id="mediaPic">
+                    <a href="#"><img id="twitter" src="images/logotwitter.jpg" alt="twitter" class="media"/></a>
+                    <a href="#"><img id="instagram" src="images/emoji.jpg" alt="Emoji" class="media"/></a>
+                    <a href="#"><img id="facebook" src="images/logofacebook.jpg" alt="Facebook" class="media"/></a>
+                </div>
+            </div>
+
+            <div id="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853470186!2d-111.91534457276165!3d42.09974162634741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1616182178807!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+
+        <div id="footer">
             <p class='legal'>&copy; <span id='copyrightyear'></span> | Emma L. Burkett | Florida | <a href="https://www.byui.edu/online" target="_blank">Blue Skies Forecasting</a><br>
             <span id='lastupdated'></span></p>
-            </div>
+        </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
     <script>
     WebFont.load({
         google: {
-        families: ['Dosis', 'Dancing Script', 'Shadows Into Light', 'bondi Moda', 'Material Icons' ]
+        families: ['Dosis', 'Dancing Script', 'Shadows Into Light', 'bondi Moda', 'Material Icons']
         }
     });
     </script>
+
 </body>
 </html>

@@ -35,12 +35,111 @@
     </nav>
 
     <main>
-        <div>
-            <h2>Sign Up for Storm Warnings!</h2>
+        <form method="get" action="thanks.html">
+            <h1>Sign up for Storm Warnings!</h1>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="input">
+                    <label for="fullname">Name
+                        <input id="fullname" type="text" placeholder="John Doe" pattern="[A-Za-z ]{5,}" title="Input greater than five characters, and only letters" required>
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="email">Email
+                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" > 
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="phone">Telephone
+                        <input id="phone" type="tel" placeholder="(123)456-7899" required>
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="zip">Zip Code
+                        <input id="zip" type="number" placeholder="98271" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <div class="input">
+                    <label for="date">Storm Date
+                        <input id="date" type="date" required>
+                    </label>
+                </div>
+
+                <div class="data">
+                    <label for="data">Storm Type
+                        <input list="datalist" name="data" id='dataid'>
+                        <datalist id="datalist">
+                            <option value="Hurricane">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="storm" id="stormSeverity">Storm Severity<br>
+                        <p>10</p>
+                        <p>1</p>
+                        <br>
+                        <input id="storm" type="range" name="storm" min="0" max="10">
+                    </label>
+                </div>
+                
+
+
+                <div class="input" id="stormRegion">
+                    <label for="area"> Storm Region
+                        <select id="area" name="area" required>
+                            <option value="">Please Select</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <p>Is it Dangerous?</p>
+                    <label for="danger">yes
+                        <input id="yes" name="danger" type="radio">
+                    </label>    
+
+                    <label for="danger">no
+                        <input id="no" name="danger" type="radio">
+                    </label>
+
+                    <label for="danger">maybe
+                        <input id="maybe" name="danger" type="radio">
+                    </label>
+                </div>
+            </fieldset>
             
-        </div>
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <div class="input">
+                    <label for="comment">
+                        <textarea name="comment" id="comment" form="usrform" placeholder="Enter text here..."></textarea>
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="button">
+                Submit
+            </button>
+        </form>
     </main>
 
+            
     <footer>
         <div id="footerGrid">
 

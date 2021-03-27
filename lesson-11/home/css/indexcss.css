@@ -1,55 +1,49 @@
-.codesize {
+.sizing {
     width: 100%;
-    margin: auto;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+header img {
+    width: 100%;
     margin: 0;
     padding: 0;
 }
-
-header img {                        /*header*/
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 header h2 {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    color: rgb(0, 86, 169);
+    color: rgb(0, 86, 196);
     font-size: 200%;
     text-align: center;
-    background-image: linear-gradient(white, rgb(255, 208, 0)); 
+    background-image: linear-gradient(white, rgb(255, 208, 0));
     margin: 0;
     padding: 0;
-}                                                           /*header*/
-
-nav ul {                                                       /*nav*/
-    margin: 0 auto;
-    background-color: rgb(255, 208, 0);   
 }
-
-nav ul li:nth-child(2) {          /*odd nav out :P*/
-    background-color:  rgb(219, 179, 0);
+nav ul {
+    margin: 0 auto;
+    background-color: rgb(255, 208, 0);
 }
 
 #navigation ul {
     list-style-type: none;
-    display: grid;   
+    display: grid;
     grid-template-columns: 1fr;
     padding: 0;
     overflow: hidden;
     font-family: 'Shadows Into Light', cursive;
 }
-
 #navigation ul li:first-child {
     display: block;
     text-align: right;
 }
-
+.breadcrums i {
+    color: white;
+    
+}
 #navigation ul li {
     display: none;
 }
-
 #navigation ul a:link,
 #navigation ul a:visited,
 #navigation ul a:hover,
@@ -62,43 +56,35 @@ nav ul li:nth-child(2) {          /*odd nav out :P*/
     margin: 0;
     padding: 0;
 }
-
 #navigation a:hover {
     background-color: rgb(255, 247, 210);
     color: rgb(6, 139, 255);
 }
-
 #navigation.responsive li {
     display: block;
     text-align: center;
-}                                                           /*nav*/
-
+}                                               /*end Nav*/
 /*
 <section> <div> <h2></h2> <h3></h3> <p></p> <p></p> <p></p> <div> <img> </section>
 */
 
-
-.imgBack { /*background img*/
-    width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
 #large {
     display: none;
 }
-
-.box {
-    width: 100%;
-    height: 700px;
-}
 .even {
     position: relative;
-    background: rgb(241, 241, 241);
-    margin: 20% 30% 20% 10%;
+    background: rgba(24, 231, 134, 0.247);
+    margin: 10% 30% 10% 10%;
     padding: 1% 5% 3%;
     border-radius: 60px;
+}
+.even a, 
+.even a:link,  
+footer a:visited, 
+footer a:hover, 
+footer a:active, 
+footer a:focus {
+    color: rgb(19, 105, 180);
 }
 .odd {
     display: none;
@@ -147,7 +133,7 @@ main section:nth-child(odd) {
 main section:nth-child(even) {
     background: rgb(241, 241, 241);
     padding: 5%;
-    margin: 20% 5% 20% 5%;
+    margin: 5% 5% 5% 5%;
     clip-path: 
     polygon(
       0% 15%,     /* top left */
@@ -161,95 +147,86 @@ main section:nth-child(even) {
     );
 }
 
-article p, article a, article li, section p {                             /*map*/
-    padding: 0 2.5% 0;
-    margin: 0;
-    font-size: 150%;
-    color: rgb(83, 83, 83); 
-    font-weight: bold;
-    list-style: none;
-}
-
-article h1 {
-    text-align: center;
-    padding-top: 5%;
-    margin: 0;
-    font-family: 'Shadows Into Light', cursive;
-    color: rgb(0, 89, 169);
-}
-
-#map {
+footer {                                        /*footer*/
     background:rgb(255, 208, 0);
-    margin: 2.5% 0 0; 
-    padding: 1% 2% 3%; 
-    text-align: center;
-    color: rgb(19, 105, 180);
-}
-
-#map h4, #map p {
-    text-align: left;
-    padding-left: 9%;
-    padding-bottom: 5%;
-}
-
-#map h4 {
-    font-size: 150%;
-    margin-top: 5%;
-    padding-bottom: 0;
-}
-
-.mediaImages {
-    display: none;
-}
-
-#bottomPic {
-    display: none;
-}
-
-#container {
-    position: relative;
-    width: 80%;
-    padding: 0;
-    margin: 0;
-    margin-left: 10%;
-    height: auto;
-}
-
-.maybe img {
-    width: 100%;
-    display: block;
-    height: auto;
-    border: 1px solid black;
-}
-
-
-#overlay a {
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    width: 95.3%;
-    opacity: 0;
-    background: white;
-}
-
-#container:hover #overlay a {
-    opacity: .5;
-}                                                           /*map*/
-
-footer {                                                    /*footer*/
-    background:rgb(255, 208, 0);
-    margin: 0;
     padding: 1% 2% 1%;
-    text-align: center;
     color: rgb(19, 105, 180);
 }
-
-footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+#contactInfo {
+    margin-left: 5%;
+}
+#twitter, #instagram, #facebook {
+    display: none;
+}
+#logo img {
+    width: 105px;
+    box-shadow: -2px 2px 5px;
+}
+#logo {
+    border-radius: 10%;
+    float: right;
+    width: 20%;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    z-index:20;
+    margin: 0 5% 10% 0;
+}
+#logo:before,
+#logo:after {
+    content:"";
+    background-color: rgb(19, 105, 180);
+    border-radius: 50%;
+    display:block;
+    position:absolute;
+    z-index: -1;
+}
+#logo:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:28px;
+    box-shadow:-50px 30px 0 -12px rgb(19, 105, 180);
+}
+#logo:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0   rgb(19, 105, 180),
+              -28px -6px 0 -2px rgb(19, 105, 180),
+              -24px 17px 0 -6px rgb(19, 105, 180),
+              -5px 25px 0 -10px rgb(19, 105, 180);
+    
+} 
+#iframe {
+    text-align: center;
+    margin: 0 5% 0 5%;
+}
+iframe {
+    box-shadow: 0 8px 15px rgb(100, 100, 100);
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+}
+footer a, 
+footer a:link,  
+footer a:visited, 
+footer a:hover, 
+footer a:active, 
+footer a:focus {
     color: rgb(19, 105, 180);
 }
 
 footer p, footer a {
     font-size: 125%;
-}                                                           /*footer*/
+}     
+#footer {
+    text-align: center;
+}
+#stormPage {
+    display: none;
+}
+
+
