@@ -168,6 +168,17 @@ nav ul {
     grid-row: 2;
 }
 
+#eventsStuff {
+    margin: 5% 2%;
+    padding: 5%;
+    background: rgb(245, 245, 245);
+    border: 1px solid grey;
+
+}
+#eventsStuff h2{
+    font-size: 150%;
+}
+
 #rightbox h2{
     display: block;
     padding: 0;
