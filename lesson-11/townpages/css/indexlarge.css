@@ -69,6 +69,7 @@
         margin: 5% 0 115% 5%;
         background: rgba(245, 245, 245, 0.728);
         border: none;
+        padding-bottom: 5%;
     }
     #forecastJava section {
         display: block;

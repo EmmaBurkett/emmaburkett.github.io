@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='Storm Center' content="Storm warning sign up">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="faicon.ico">
+    <title>Storm Center</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="storm/css/index.css" rel="stylesheet">
+    <link href="storm/css/indexmedium.css" rel="stylesheet">
+    <link href="storm/css/indexlarge.css" rel="stylesheet">
+    <script src="storm/js/index.js"></script>
+
+</head>
+<body class="sizing">
+    <header>
+        <span id="advertizement"></span>
+        <img src="images/blueskiesbanner.jpg" alt="Blue Skies Title"/>
+        <h2><br>Preston Idaho: Party on Cloud Nine</h2>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href='#' class="ham">&#9776;</a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html"><div class="breadcrums"><i class="material-icons">fiber_manual_record</i>Storm Center</div></a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form method="get" action="thanks.html">
+            <h1>Sign up for Storm Warnings!</h1>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="input">
+                    <label for="fullname">Name
+                        <input id="fullname" type="text" placeholder="John Doe" pattern="[A-Za-z ]{5,}" title="Input greater than five characters, and only letters" required>
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="email">Email
+                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" > 
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="phone">Telephone
+                        <input id="phone" type="tel" placeholder="(123)456-7899" required>
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="zip">Zip Code
+                        <input id="zip" type="number" placeholder="98271" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <div class="input">
+                    <label for="date">Storm Date
+                        <input id="date" type="date" required>
+                    </label>
+                </div>
+
+                <div class="data">
+                    <label for="data">Storm Type
+                        <input list="datalist" name="data" id='dataid'>
+                        <datalist id="datalist">
+                            <option value="Hurricane">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="storm" id="stormSeverity">Storm Severity<br>
+                        <p>10</p>
+                        <p>1</p>
+                        <br>
+                        <input id="storm" type="range" name="storm" min="0" max="10">
+                    </label>
+                </div>
+                
+
+
+                <div class="input" id="stormRegion">
+                    <label for="area"> Storm Region
+                        <select id="area" name="area" required>
+                            <option value="">Please Select</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <p>Is it Dangerous?</p>
+                    <label for="danger">yes
+                        <input id="yes" name="danger" type="radio">
+                    </label>    
+
+                    <label for="danger">no
+                        <input id="no" name="danger" type="radio">
+                    </label>
+
+                    <label for="danger">maybe
+                        <input id="maybe" name="danger" type="radio">
+                    </label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <div class="input">
+                    <label for="comment">
+                        <textarea name="comment" id="comment" form="usrform" placeholder="Enter text here..."></textarea>
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="button">
+                Submit
+            </button>
+        </form>
+    </main>
+
+            
+    <footer>
+        <div id="footerGrid">
+
+            <div id="logo"><img id="logo" src="images/blueskieslogosquare.jpg" alt="Blue Skies Forecast Logo"/></div>
+
+            <div id="stormPage">
+                <p>
+                    <a href="stormcenter.html">Sign Up for Storm Warnings Here!</a>
+                </p>
+            </div>
+
+            <div id="contactInfo">
+                <h4>Contanct Infomation</h4>
+                <p>&#127820; (675)849-0303<br>&#128231; 5768 Whatever ST<br><i class="material-icons">add_location</i>Preston Idaho</i></p>
+
+                <div id="mediaPic">
+                    <a href="#"><img id="twitter" src="images/logotwitter.jpg" alt="twitter" class="media"/></a>
+                    <a href="#"><img id="instagram" src="images/emoji.jpg" alt="Emoji" class="media"/></a>
+                    <a href="#"><img id="facebook" src="images/logofacebook.jpg" alt="Facebook" class="media"/></a>
+                </div>
+            </div>
+
+            <div id="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853470186!2d-111.91534457276165!3d42.09974162634741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1616182178807!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Emma L. Burkett | Florida | <a href="https://www.byui.edu/online" target="_blank">Blue Skies Forecasting</a><br>
+            <span id='lastupdated'></span></p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+        families: ['Dosis', 'Dancing Script', 'Shadows Into Light', 'bondi Moda', 'Material Icons']
+        }
+    });
+    </script>
+
+</body>
+</html>

@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .cards section:nth-child(even) div { 
+    .cards section:nth-child(even) div {
         grid-column: 2;
     }
     .cards section:nth-child(even) img {

@@ -55,84 +55,25 @@
                   -5px 25px 0 -10px #fff;
         
     }                                   /*end nav*/
-    main section img { /*images*/
-        width: 100%;
-        min-height: 350px;
-        max-height: 320px;
-        object-fit: cover;
-    }
-    #small {
-        display: none;
-    }
-    #large {
-        display: block;
-        height: 1000px;
-        object-fit: cover;
-        width: 100%;
-        
-    }
-    .cards section {
-        display: grid;
-        grid-template-rows:repeat(auto-fill, minmax(250px,.1fr));
-        grid-template-columns: 1fr;
-        font-size: 120%;
-    }
-    .cards section:nth-child(even) div {
-        grid-column: 1;
-    }
-    .cards section:nth-child(even) img {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: none;
-    }
-    .cards section:nth-child(1) {
-        margin: 0 0 0 5%;
-    }
-    .cards section:nth-child(2) {
-        margin: 0 0 0 0;
-    }
-    .cards section:nth-child(3) {
-        margin: 0 5% 0 0;
+
+/*middle stuff*/
+
+    form {
+        max-width: 50%;
+        margin: 0 auto;
     }
 
-    .gridTop {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    #thanks {
+        margin: 0 20%;
     }
-    .even {
-        margin: 50% 0% 50% 0%;
-        border-radius: 0;
-        grid-column: 2;
-        clip-path: 
-        polygon(
-        0% 35px,                 /* top left */
-        35px 0%,                 /* top left */
-        calc(100% - 35px) 0%,    /* top right */
-        100% 35px,               /* top right */
-        100% calc(100% - 35px),  /* bottom right */
-        calc(100% - 35px) 100%,  /* bottom right */
-        35px 100%,               /* bottom left */
-        0 100%     /* bottom left */
-        );
-    }
-    .odd {
-        margin-top: 50%;
-    }
-    .even {
-        margin-top: 80%;
-        margin-bottom: 51.5%;
-    }
-    .odd img {
-        width: 100%;
-        float: center;
-    }
+
+
+
+
+
     #footerGrid {                       /*footer*/
         grid-template-columns: 3fr 1fr 1fr;
-        grid-template-rows: 1.3fr 1fr; 
+        grid-template-rows: 1.3fr 1fr;
         text-align: center;
         grid-row-gap: 1px;
     }
@@ -196,7 +137,7 @@
     #stormPage a:focus {
         font-size: 200%;
         margin: 0;
-        margin-bottom: 5%;
+        margin-bottom: 5%; 
         padding: 0;
     }
     #stormPage p {
