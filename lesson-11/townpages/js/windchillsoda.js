@@ -1,9 +1,9 @@
 window.addEventListener('load', () => {
-const appid  = "5b70937232e0e8d8c562b29e7c24a2c0";
-const cityID = "5604473";
-const units = "imperial";
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&units=" + units + "&appid=" + appid;
-fetch(apiURL)
+    const appid  = "5b70937232e0e8d8c562b29e7c24a2c0";
+    const cityID = "5607916";
+    const units = "imperial";
+    const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&units=" + units + "&appid=" + appid;
+    fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
