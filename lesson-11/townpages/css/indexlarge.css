@@ -58,7 +58,7 @@
     #heroImage {  /*coding for the middle*/
         grid-template-rows: 650px;
     }
-
+ 
     #heroImage article:nth-child(1) {
         height: 650px;
     }
@@ -71,11 +71,12 @@
         border: none;
         padding-bottom: 5%;
     }
-    #forecastJava section {
-        display: block;
-    }
     #forecastJava h1, #forecastJava p, #forecastJava img {
         padding: 5%;
+    }
+    #forecastJava section {
+        grid-template-rows: 50px 150px 70px 50px;
+        text-align: center;
     }
     #footerGrid {                       /*footer*/
         grid-template-columns: 3fr 1fr 1fr;
