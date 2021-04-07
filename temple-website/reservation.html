@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='Reservation page' content="Reservation Page Temple Inn and Suites">
+    <meta name='veiwport' content='width=device-width, initial-scale-1.0'>
+    <link rel="shortcut icon" href="images/templelogofooter.ico">
+    <Title>Reservation Page</Title>
+    <link href="css/reservation.css" rel="stylesheet">
+    <script src="js/nav-footer-header.js"></script>
+</head>
+<body id="body">
+    <div id="top">
+    <nav id="navigation">
+        <ul>
+            <li><a href='#' class="ham">&#8226;&#8226;&#8226;</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservation.html">Reserve a Room!</a></li>
+            <li class="button"><a href="service.html">Services</a></li>
+            <li class="seviceNav"><a href="reception.html">Weddings</a></li>
+            <li class="seviceNav"><a href="missionaries.html">Missionaries</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+            <li><a href="tel:+8008880000">(800)888-0000</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <header>
+        <a href="home.html" class="home"><img src="images/templelogofooter.jpg" alt="temple with trumpet"></a>
+        <h2>TEMPLE INN</h2>
+        <h1>AND SUITES</h1> 
+    </header> 
+
+    <main>
+        <h1><a href="home.html">Home /</a> <a href="reservation.html">Reservations...</a> </h1>
+        <h2>Make a Reservation</h2>
+
+        <div class="large">
+            <form method="get" action="thanks.html">
+                <fieldset id="roomDeats" class="array"> 
+                    <legend>Room Details</legend>
+                    <div class="select">
+                        <label for="templeLocation">Temple
+                            <select id="templeLocation" name="templeLocation" required>
+                                <option value="">Temple Loaction</option>
+                                <option value="Washington D.C.">Washington D.C. Temple</option>
+                                <option value="Sapporo Japan">Sapporo Japan Temple</option>
+                                <option value="Phoenix Arizona">Phoenix Arizona Temple</option>
+                                <option value="Seoul Korea">Seoul Korea Temple</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="checkIn">Check In
+                            <input type="date" name="checkIn" id="checkIn" required>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="checkOut">Check Out
+                            <input type="date" name="checkOut" id="checkOut" required>
+                        </label>
+                    </div>
+                    <div class="select">
+                        <label for="guests">Guests
+                            <select name="guests" id="guests" required>
+                                <option value="">Guests</option>
+                                <option value="One Adult">1 Adult</option>
+                                <option value="Two Adults">2 Adults</option>
+                                <option value="Three Adults">3 Adults</option>
+                                <option value="4 or More Adults">4+ Adults</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="missionary" id="missionary">
+                        <label for="missionary">Full Time Missionaries</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="patron" id="patron">
+                        <label for="patron">Temple Patron</label>
+                    </div>
+                </fieldset>
+                <fieldset id="mawwage" class="array">
+                    <legend>Marriage - If Applicable</legend>
+                    <div class="input">
+                        <label for="receptionDate">Reception Date
+                            <input type="date" name="receptionDate" id="receptionDate">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="numberGuests">Number of Guests
+                            <input placeholder="50 Guests" name="numberGuests" id="numberGuests">
+                        </label>
+                    </div>
+                    <div class="check">
+                        <input id="historyThemed" type="checkbox" name="historyThemed">
+                        <label for="historyThemed">Temple History Themed</label>
+                    </div>
+                </fieldset>
+                <fieldset id="payment" class="array">
+                    <legend>Payment Details</legend>
+                    <div class="input">
+                        <label for="fullname">Cardholder Name</label>
+                        <input id="fullname" name="fullname" type="text" placeholder="Alexis Johnson" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="ccnum">Card Number</label>
+                        <input name="ccnum" id="ccnum" type="text" placeholder="1234-5678-9012-3456" required pattern=[0-9\-]{16,19}> <!--How do I make this an 'or' '16 or 19' vs. '16-19'?-->
+                    </div>
+                    <fieldset class="noBorder">
+                        <legend>Expiration Date</legend>
+                        <div class="input">
+                            <label for="month">Month
+                                <select name="month" id="month" required>
+                                    <option value="">Month</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="input">
+                            <label for="year">Year
+                                <select name="year" id="year" required>
+                                    <option value="">Year</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="input" id="shorter">
+                            <label for="cvv">CVV</label>
+                            <input name="cvv" id="cvv" type="password" placeholder="&bull; &bull; &bull;" pattern="[0-9]{3}" required>
+                        </div>
+                    </fieldset>
+                    <div class="input">
+                        <label for="billing">Billing Address</label>
+                        <input id="billing" name="billing" type="text" placeholder="25 Bloor St E, Toronto, ON">
+                    </div>
+                </fieldset>
+                <fieldset id="comments" class="array">
+                    <legend>Concerns/Special Needs</legend>
+                    <div class="text">
+                        <label for="comment">
+                            <textarea name="comment" id="comment" placeholder="Enter text here..."></textarea>
+                        </label>
+                    </div>
+                </fieldset>
+                <button type="submit" id="button" class="array">
+                    Place Reservation
+                </button>
+            </form>
+
+            <div id="right"><a onclick="plusSlides(1)">Next<span class="material-icons">chevron_right</span></a></div>
+            <div id="left"><a onclick="plusSlides(-1)"><span class="material-icons">chevron_left</span>Back</a></div>
+           
+        </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <section>
+                <h3><a href="service.html#services">Services</a></h3>
+                <p><a href="service.html#baby">Baby Sitting</a></p>
+                <p><a href="service.html#facilities">Changing Facilities</a></p>
+                <p><a href="reception.html#reception">Reception Area</a></p>
+                <p><a href="service.html#history">Family Search Center</a></p>
+            </section>
+
+            <section>
+                <h3><a href="service.html#amenities">Free Amenities</a></h3>
+                <p><a href="service.html#breakfast">Breakfast</a></p>
+                <p><a href="service.html#pool">Exercise Room</a></p>
+                <p><a href="service.html#pool">Indoor Pool</a></p>
+                <p><a href="service.html#shuttle">Temple Shuttle</a></p>
+            </section>
+
+            <section>
+                <h3><a href="reservation.html" class="black">Reservations</a></h3>
+                <h3><a href="service.html">All Services</a></h3>
+                <h3><a href="missionaries.html">Missonaries</a></h3>
+                <h3><a href="reception.html">Weddings</a></h3>
+                <h3><a href="temples.html">Temples</a></h3>
+            </section>
+        </div>
+
+        <section class="section">
+            <a href="home.html" class="span"><img src="images/templelogofooter.jpg" alt="temple with trumpet"></a>
+            <h3><a href="contact.html">Contact Us</a></h3>
+            <h3><a href="contact.html#map">Location</a></h3>
+            <p><a href="tel:+8008880000">(800)888-0000</a></p>
+            <p><a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832518,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" target="_blank">4800 Montgomery Ln #300, Bethesda, MD 20814</a></p>
+            <h3 class="spantwo"><a href="contact.html#terms">Terms and Conditions</a></h3>
+            <p class="spantwo">Here at Temple Inn & Suites your comfort and service is important to us. Please read our <a href="contact.html#terms">terms and conditions</a> to avoid misunderstandings.</p>
+        </section>
+    </footer> 
+
+    <script src="js/reservation.js"></script>  <!--It produced an error at the top!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+        families: ['Tangerine', 'Material Icons']
+        }
+    });
+    </script>
+</body>
+</html>

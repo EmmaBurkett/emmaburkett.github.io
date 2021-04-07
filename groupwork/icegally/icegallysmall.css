@@ -55,7 +55,7 @@ img:hover {
     z-index: 50;
 }
 
-.pic::before {
+.pic::before { 
     content: '';
     display: block;
     position: absolute;

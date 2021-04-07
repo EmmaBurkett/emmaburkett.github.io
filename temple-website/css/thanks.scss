@@ -1,0 +1,19 @@
+@import "normalize";
+
+@import "nav-footer-header";
+
+main {
+    h2 {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 560px) {
+    @import "nav-footer-header-medium";
+} /* end of media query */
+ 
+
+@media only screen and (min-width: 728px) {
+    @import "nav-footer-header-large";
+} /* end of media query */  

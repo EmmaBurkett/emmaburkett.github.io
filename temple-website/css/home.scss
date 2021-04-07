@@ -1,0 +1,225 @@
+@import "normalize";
+
+@import "nav-footer-header";
+body {
+    width: calc(100%-15px);
+    padding: 0 auto; 
+    margin: 0;
+}
+main {
+    h1 {
+        margin-left: 3.5%;
+        padding-bottom: 0;
+        margin-bottom:0;
+    }
+    .sticky {
+        width: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        display: block;
+        top: 2px;
+        z-index: 500;
+        form {
+            .input, .select {
+                display: none;
+            }
+            fieldset {
+                border: none;
+                margin: 2% 0 2% 2%;
+                padding: 0;
+            }
+            button {
+                width: 100%;
+                background: gold;
+                border: none;
+                font-weight: bold;
+                font-size: 150%;
+                padding: 3%;
+                display: block;
+                margin: 0;
+                box-shadow: 1px 1px 5px  rgb(95, 165, 205);
+            }
+            button:hover {
+                background: rgb(95, 165, 205);
+                box-shadow: 1px 1px 5px gold;
+                color: white;
+            }
+        }
+    }
+}
+ 
+.gridhome {
+    #temples {
+        text-align: center;
+    }
+    #temples img {
+        width: 100%;
+        border: 5px solid gold;
+        box-shadow: 0 0 15px rgb(95, 165, 205);
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 98%;
+        margin-left: 1%;
+    }
+    
+    .picture {
+        grid-row: 1;
+        grid-column: 1;
+        margin: 0;
+        padding:0;
+    }
+    .overlay { //words are hidden!!!
+        display: none;
+    }
+    .grid:hover .overlay { //words are hidden until hovered over then class="overlay"
+        grid-row: 1;
+        display: block;
+        grid-column: 1;
+        width: 100%;
+        height: 97%;
+        border: 5px solid gold;
+        box-shadow: 0 0 15px gold;
+        margin: 0;
+        background: rgb(248, 248, 248);
+        animation: fadein 2s;
+    }
+    #temples:hover img {
+        box-shadow: 0 0 15px gold;
+    }
+    @keyframes fadein {                           /*loading images*/
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .hoteldiv {
+        margin-top: 10%;
+        h2 {
+            text-align: center;
+        }
+    }
+    .hotel {
+        border: 5px solid gold;
+        box-shadow: 0 0 15px rgb(95, 165, 205);
+        margin-left: 1%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            vertical-align: bottom;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 560px) {
+    @import "nav-footer-header-medium";
+} /* end of media query */
+ 
+
+@media only screen and (min-width: 728px) {
+    @import "nav-footer-header-large";
+    main {
+        .sticky {
+            form {
+                fieldset {
+                    border: 3px solid gold;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 3fr;
+                    gap: 5px;
+                    padding: 2%;
+                    background: white;
+                    .input, .select {
+                        display: block;
+                        input {
+                            display: block;
+                            min-height: 52.5%;
+                            width: 138px;
+                        }
+                    }
+                    .select select {
+                        width: 100%;
+                        min-width: 89px;
+                        min-height: 60%;
+
+                    }
+                    .select option {
+                        font-weight: bold;
+                    }
+                    button {
+                        width: 100%;
+                        background: gold;
+                        border: none;
+                        font-weight: bold;
+                        font-size: 150%;
+                        padding: 3%;
+                        display: block;
+                        margin: 0;
+                        box-shadow: 1px 1px 5px  rgb(95, 165, 205);
+                    }
+                    button:hover {
+                        background: rgb(95, 165, 205);
+                        box-shadow: 1px 1px 5px gold;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .gridhome {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        .hoteldiv {
+            margin:0;
+            img {
+                height: 253px; //how to get image to dynamically adjust size???
+            }
+        }
+        #temples img {
+            height: 253px;
+            object-fit: cover;
+        }
+    }
+} /* end of media query */  
+
+@media only screen and (min-width: 928px) {
+    main {
+        .sticky {
+            form {
+                fieldset {
+                    .input, .select {
+                        input {
+                            height: 50%;
+                            width: 98%;
+                        }
+                    }
+                    .select select {
+                        width: 100%;
+                        min-height: 60%;
+
+                    }
+                }
+            }
+        }
+    }
+    
+    .gridhome {
+        .hoteldiv {
+            img {
+                height: 318px; //how to get image to dynamically adjust size???
+            }
+        }
+        #temples img {
+            height: 318px;
+            object-fit: cover;
+        }
+    }
+} /* end of media query */  

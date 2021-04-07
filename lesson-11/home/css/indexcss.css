@@ -46,7 +46,7 @@ nav ul {
 }
 #navigation ul a:link,
 #navigation ul a:visited,
-#navigation ul a:hover,
+#navigation ul a:hover, 
 #navigation ul a:active,
 #navigation ul a:focus {
     display: block;
@@ -54,7 +54,7 @@ nav ul {
     text-decoration: none;
     color: rgb(19, 105, 180);
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 #navigation a:hover {
     background-color: rgb(255, 247, 210);

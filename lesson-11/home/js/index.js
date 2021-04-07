@@ -40,13 +40,13 @@ fetch(requestURL)
     }
   });
 
-  window.addEventListener('load', ()=> {
-    const hambutton = document.querySelector('.ham');
-    const mainnav = document.querySelector('#navigation');
+  window.addEventListener('load', ()=> { 
+    const hambutton = document.querySelector('.ham'); //grabs button!!
+    const mainnav = document.querySelector('#navigation'); //grabs nav bar
 
-    hambutton.addEventListener('click', ()=>{mainnav.classList.toggle('responsive')},false);
+    hambutton.addEventListener('click', ()=>{mainnav.classList.toggle('responsive')},false);//when button clicked toggle responsive css
 
-    window.onresize = ()=> {if(window.innerWidth>760) mainnav.classList.remove('responsive');};                            
+    window.onresize = ()=> {if(window.innerWidth>760) mainnav.classList.remove('responsive');};//remove when window is large!!!                    
 });
 
 window.addEventListener('load', (event)=> {

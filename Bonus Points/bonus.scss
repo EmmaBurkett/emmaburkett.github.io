@@ -1,0 +1,41 @@
+@import "normalize";
+
+body {
+    background: grey;
+}
+main {
+    width: 50%;
+    font-size: 200%;
+    background: white;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid
+    form {
+        grid-column: 2;
+
+    }
+    span {
+        font-size: 200%;
+        color: red;
+        background: white;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    #div {
+        background: red;
+        grid-row: 1;
+        margin-top: 45%;
+        border-radius: 50%;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (min-width: 560px) {
+
+} /* end of media query */
+ 
+
+@media only screen and (min-width: 728px) {
+}

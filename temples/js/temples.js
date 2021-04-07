@@ -1,5 +1,5 @@
 window.addEventListener('load', ()=>{
-    //const serverName = "http://127.0.0.1;5500/ice/temples/"
+    //const serverName = "https://127.0.0.1;5500/ice/temples/"
     const requestURL = "js/temples2.json" //fetch url
     fetch(requestURL)
         .then((response)=> { //call file response

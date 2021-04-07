@@ -1,0 +1,77 @@
+@import "normalize";
+
+@import "nav-footer-header";
+
+body {
+    width: calc(100%-15px);
+    padding: 0 auto; 
+    margin: 0;
+}
+#temples {
+    text-align: center;
+}
+#temples img {
+    width: 100%;
+    border: 5px solid gold;
+    box-shadow: 0 0 15px rgb(95, 165, 205);
+}
+
+main {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.picture {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0;
+    padding:0;
+}
+.overlay { //words are hidden!!!
+    display: none;
+}
+.grid:hover .overlay { //words are hidden until hovered over then class="overlay"
+    grid-row: 1;
+    display: block;
+    grid-column: 1;
+    width: 100%; 
+    height: 97%;
+    border: 5px solid gold;
+    box-shadow: 0 0 15px gold;
+    margin: 0;
+    background: rgb(248, 248, 248);
+    animation: fadein 2s;
+    p {
+        margin: 2.5% 5%;
+
+    }
+}
+#temples:hover img {
+    box-shadow: 0 0 15px gold;
+}
+@keyframes fadein {                           /*loading images*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (min-width: 560px) {
+    @import "nav-footer-header-medium";
+
+} /* end of media query */
+
+
+@media only screen and (min-width: 728px) {
+    @import "nav-footer-header-large";
+} /* end of media query */  

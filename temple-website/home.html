@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='Temple Home page' content="Home Page Temple Inn and Suites">
+    <meta name='veiwport' content='width=device-width, initial-scale-1.0'>
+    <link rel="shortcut icon" href="images/templelogofooter.ico">
+    <Title>Temple Inn and Suites Home Page</Title>
+    <link href="css/home.css" rel="stylesheet">
+    <script src="js/nav-footer-header.js"></script> 
+    <script src="js/home.js"></script>
+</head>
+<body id="body"> 
+
+    <div id="top">
+    <nav id="navigation">
+        <ul>
+            <li><a href='#' class="ham">&#8226;&#8226;&#8226;</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservation.html">Reserve a Room!</a></li>
+            <li class="button"><a href="service.html">Services</a></li>
+            <li class="seviceNav"><a href="reception.html">Weddings</a></li>
+            <li class="seviceNav"><a href="missionaries.html">Missionaries</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+            <li><a href="tel:+8008880000">(800)888-0000</a></li>
+        </ul>
+    </nav>
+    </div> 
+    
+    <header>
+        <a href="home.html" class="home"><img src="images/templelogofooter.jpg" alt="temple with trumpet"></a>
+        <h2>TEMPLE INN</h2>
+        <h1>AND SUITES</h1> 
+    </header> 
+
+<main>
+    <h1><a href="home.html">Home...</a></h1>
+    <div class="sticky">
+        <form method="get" action="reservation.html">
+            <fieldset>
+                <div class="input">
+                    <label for="checkin">Check In
+                        <input id="checkin" type="date" name="checkin">
+                    </label>
+                </div>
+                <div class="input">
+                    <label for="checkout">Check Out
+                        <input id="checkout" type="date" name="checkout">
+                    </label>
+                </div>
+                <div class="select">
+                    <label for="area">Guests
+                        <select id="area" name="area">
+                            <option value="">Guests</option>
+                            <option value="One Adult">1 Adult</option>
+                            <option value="Two Adults">2 Adults</option>
+                            <option value="Three Adults">3 Adults</option>
+                            <option value="4 or More Adults">4+ Adults</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="submit">Book Now</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="gridhome">
+        <div class="temples">
+            <section id="temples">
+
+            </section>
+        </div>
+
+        <div class="hoteldiv">
+            <h2>Temple Inn's D.C. Hotel</h2>
+            <div class="hotel">
+            <picture>
+                <source srcset="images/hotelhomelarge.jpg" media="(max-width: 375px)">
+                <source srcset="images/hotelhomemed.jpg" media="(min-width: 376px) and (max-width: 768px)">
+                <img loading="lazy" src="images/hotelhome.jpg" alt="Temple Inn and Suites D.C. Hotel"> 
+            </picture>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <div>
+        <section>
+            <h3><a href="service.html#services">Services</a></h3>
+            <p><a href="service.html#baby">Baby Sitting</a></p>
+            <p><a href="service.html#facilities">Changing Facilities</a></p>
+            <p><a href="reception.html#reception">Reception Area</a></p>
+            <p><a href="service.html#history">Family Search Center</a></p>
+        </section>
+
+        <section>
+            <h3><a href="service.html#amenities">Free Amenities</a></h3>
+            <p><a href="service.html#breakfast">Breakfast</a></p>
+            <p><a href="service.html#pool">Exercise Room</a></p>
+            <p><a href="service.html#pool">Indoor Pool</a></p>
+            <p><a href="service.html#shuttle">Temple Shuttle</a></p>
+        </section>
+
+        <section>
+            <h3><a href="reservation.html" class="black">Reservations</a></h3>
+            <h3><a href="service.html">All Services</a></h3>
+            <h3><a href="missionaries.html">Missonaries</a></h3>
+            <h3><a href="reception.html">Weddings</a></h3>
+            <h3><a href="temples.html">Temples</a></h3>
+        </section>
+    </div>
+
+    <section class="section">
+        <a href="home.html" class="span"><img src="images/templelogofooter.jpg" alt="temple with trumpet"></a>
+        <h3><a href="contact.html">Contact Us</a></h3>
+        <h3><a href="contact.html#map">Location</a></h3>
+        <p><a href="tel:+8008880000">(800)888-0000</a></p>
+        <p><a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832518,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" target="_blank">4800 Montgomery Ln #300, Bethesda, MD 20814</a></p>
+        <h3 class="spantwo"><a href="contact.html#terms">Terms and Conditions</a></h3>
+        <p class="spantwo">Here at Temple Inn & Suites your comfort and service is important to us. Please read our <a href="contact.html#terms">terms and conditions</a> to avoid misunderstandings.</p>
+    </section>
+</footer> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+WebFont.load({
+    google: {
+    families: ['Tangerine']
+    }
+});
+</script>
+</body>
+</html>

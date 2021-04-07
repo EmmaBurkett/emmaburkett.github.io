@@ -1,0 +1,60 @@
+[
+    {
+        "name":"Washington D.C. Temple",
+        "address":"9900 Stoneybrook Dr Kensington MD 20895-3199 United States",
+        "phone":"(+1) 301-588-0650",
+        "services": "A free temple shuttle, funded by donations, is offered to patrons and visitors traveling between the Metro and the Washington D.C. Temple.",
+        "history": "The highly successful public open house of the Washington D.C. Temple was attended by 758,328 guests including special guest Betty Ford—wife of then-U.S. President Gerald Ford.",
+        "schedule": "Closed for renovations",
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington-dc-temple-lds-1027621-wallpaper.jpg",
+        "imageurllarge": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/800x500/washington-dc-temple-lds-1027621-wallpaper.jpg" ,
+        "imageurlmedium": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/1280x800/washington-dc-temple-lds-1027621-wallpaper.jpg",
+        "prayer": ["Our Holy Father in heaven, thou who hast created our spirits and the heavens and the earth and all things therein, thou most glorious one, perfect in mercy and love and truth, in the name of thy greatly Beloved Son, Jesus Christ, we come to thee this day in this beautiful edifice, to dedicate it unto thee, our living God.", "We praise thy Holy Name, our Beloved Father. We are grateful that thou didst cause this land to be rediscovered and settled by people who founded a great nation with an inspired constitution guaranteeing freedom in which there could come the glorious restoration of the gospel and the Church of thy Beloved Son..."],
+        "link": "https://www.churchofjesuschrist.org/temples/details/washington-d.c.-temple/prayer/1974-11-19",
+        "id": 4140963
+    },
+ 
+    {
+        "name":"Sapporo Japan Temple",
+        "address":"1-6-1 Oyachi-Nishi Atsubetsu-ku Sapporo, Hokkaido 004-0042, Japan",
+        "phone":"(81) 11-890-8120",
+        "services": "Distribution center nearby & patron housing available",
+        "history": "I am thankful for this historic groundbreaking—even in this downpour,\" Elder Stevenson said. \"Everything today was wet with rain, but the spirit of the saints was not dampened at all. They came with their hearts open and with complete joy as they saw the image of the temple at the groundbreaking ceremony. You could see that their eyes and hearts were just filled with joy to know that they are going to have a house of the Lord on the island.\"",
+        "schedule": "Open for live ordinances only",
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-night-1945721.jpg",
+        "imageurllarge": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/1280x800/sapporo-japan-exterior-night-1945721.jpg" ,
+        "imageurlmedium": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/800x500/sapporo-japan-exterior-night-1945721.jpg",
+        "prayer": ["O God our Heavenly Father, we come unto Thee in prayer to dedicate the Sapporo Japan Temple. We thank Thee for Thy Beloved Son and His infinite Atonement. We thank Thee for Thy Prophet Joseph Smith and the restoration of the gospel. We are grateful, Father, for a living prophet today, President Thomas S. Monson. We love him and pray for him and his counselors.", "We thank Thee for Thy faithful children throughout the world who pay their tithes and offerings. We thank Thee for Thy blessings to this nation of Japan and its people. Wilt Thou bless the leaders and citizens of this land, that harmony and courtesy may be preserved in their culture. Please bless Thy children here to keep Thy commandments and prosper in this land."],
+        "link": "https://www.churchofjesuschrist.org/temples/details/sapporo-japan-temple/prayer/2016-08-21?lang=eng" , 
+        "id": 2128295
+    } ,   
+    {
+        "name":"Seoul Korea Temple",
+        "address":"Sinchon-ro 7 GIL 21 Seodaemun-gu, Seoul Seoul-teukbyeolsi 03783, South Korea",
+        "phone":"(82) 2-330-2700",
+        "services": "Distribution center nearby & patron housing available",
+        "history": "The Korean saints first began expressing their urgings for a temple in Korea beginning in the early 1960s. During that time, Park Jae Am asked Elder Gordon B. Hinckley if there would ever be a temple in Korea. Elder Hinckley reportedly smiled and promised in a very encouraging tone that if the saints stayed close to the Lord and were obedient to the Church that there would one day be a temple in the Land of the Morning Calm.",
+        "schedule": "Open for live ordinances only",
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg",
+        "imageurllarge": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/1280x800/seoul-korea-temple-lds-424784-wallpaper.jpg" ,
+        "imageurlmedium": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/800x500/seoul-korea-temple-lds-424784-wallpaper.jpg",
+        "prayer": ["Our Holy Father in Heaven, Thou who hath created our spirits and the heavens and the earth and all things therein, in the worthy name of Thy greatly Beloved Son, Jesus Christ, we come to Thee this day in this beautiful edifice to dedicate it unto Thee, our Living God.", "We thank Thee, our gracious Lord, that in this dispensation of the fulness of times Thou and Thy Beloved Son didst visit the earth and through the instrumentality of Thy chosen servant, Joseph Smith, Thy gospel was restored. Thus, after centuries of darkness, were the heavens reopened and the knowledge of Thee and Thy Son and Thy plan of life and salvation again offered to the children of Thy earthly kingdom."] ,
+        "link": "https://www.churchofjesuschrist.org/temples/details/seoul-korea-temple/prayer/1985-12-14?lang=eng" , 
+        "id": 1835848
+    },
+
+    {
+        "name":"Phoenix Arizona Temple",
+        "address1":"5220 W Pinnacle Peak Rd Phoenix AZ 85310 United States",
+        "phone":"(1) 623-474-9500",
+        "services": "No Services.",
+        "history": "When President Thomas S. Monson announced that a fifth temple for Arizona would be built in Phoenix, he stated: \"The blessings of the temple are eternal. Those who come to this holy house will feel of God's love for His children and come to a greater understanding of their own divine origin and potential as His sons and daughters.\"",
+        "schedule": "Open for live ordinances only",
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/pheonix-arizona/2018/400x250/Phoenix-Arizona-Temple-15-1584397.jpg",
+        "imageurllarge": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/pheonix-arizona/2018/1280x800/Phoenix-Arizona-Temple-15-1584397.jpg" ,
+        "imageurlmedium": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/pheonix-arizona/2018/800x500/Phoenix-Arizona-Temple-15-1584397.jpg",
+        "prayer": ["Our Eternal Father in heaven, who created the heavens, the earth, and all things thereon, we bow before Thee this day in this beautiful edifice to dedicate it unto Thee.", "We thank Thee for the gift of Thy Beloved Son, who gave Himself a ransom for all mankind, breaking the bands of death and opening the gates of salvation."] ,
+        "link": "https://www.churchofjesuschrist.org/temples/details/phoenix-arizona-temple/prayer/2014-11-16?lang=eng" , 
+        "id": 5308655
+    } 
+]

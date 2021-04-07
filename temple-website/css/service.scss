@@ -1,0 +1,144 @@
+@import "normalize";
+
+@import "nav-footer-header";
+nav {
+    background: rgb(248, 248, 248);
+}
+main {
+    width: 100%;
+    margin: 0;
+    background: rgb(248, 248, 248);
+    h1 {
+        margin-left: 5%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 400%;
+    }
+    #amenities {
+        background: rgb(0, 89, 167);
+        color: rgb(243, 243, 243);
+        width: 85%;
+        padding: 2% 5% 5%;
+        margin: 2.5%;
+    } 
+    #services {
+        //background: rgb(238, 238, 238);
+        background: rgb(248, 248, 248);
+        width: 90%;
+        padding: 2% 5% 5%;
+    }
+    .indent {
+        margin-left: 2.5%;
+    }
+    .blue {
+        width: 85%;
+        color: rgb(243, 243, 243);
+        background: rgb(0, 89, 167);
+        margin: 2.5%;
+        padding: 2% 5% 5%;
+
+        h3 {
+            font-size: 400%;
+            margin: 0;
+        }
+        li {
+            font-size: 150%;
+        }
+    }
+    #amenities a:link,
+    #amenities a:visited,
+    #amenities a:hover, 
+    #amenities a:active,
+    #amenities a:focus {
+        font-size: 130%;
+        text-decoration: none;
+        color:  rgb(243, 243, 243);
+        font-weight: bold;
+        margin: 0;
+        padding: 0; 
+    }
+    #services a:link,
+    #services a:visited,
+    #services a:hover, 
+    #services a:active,
+    #services a:focus {
+        font-size: 130%;
+        text-decoration: none;
+        color: rgb(43, 43, 43);
+        font-weight: bold;
+        margin: 0;
+        padding: 0; 
+    }
+    #services a:hover, #amenities a:hover {
+        color: rgb(0, 136, 255);
+        border-bottom: 3px solid rgb(0, 136, 255);
+    }
+    img {
+        width: 95%;
+        max-height: 300px;
+        object-fit: cover;
+        padding: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 560px) {
+    @import "nav-footer-header-medium";
+} /* end of media query */
+ 
+
+@media only screen and (min-width: 728px) {
+    @import "nav-footer-header-large";
+    main {
+        padding: 2.5%;
+        margin-left: 12%;
+        #services {
+            h2 {
+                border-bottom: 2px solid rgb(0, 89, 167);
+                margin-right: 20%;
+            }
+        }
+        img {
+            min-height: 400px;
+        }
+        picture{
+            width: 100%;
+        }
+        .blue {
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            width: 90%;
+            text-align: center;
+            
+            h3, li {
+                align-self: center;
+            }
+        }
+    }
+
+        .gridpic {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            margin-left: 2.5%;
+            width: 97.5%;
+        }
+        main div:nth-child(even) .blue {
+            grid-column: 2;
+        }
+        main div:nth-child(even) picture {
+            grid-column: 1;
+            grid-row: 1;
+        
+        }
+
+        #services, #amenities {
+            text-align: left;
+        }
+        #amenities h2 {
+            margin-bottom: 2%;
+        }
+} /* end of media query */  

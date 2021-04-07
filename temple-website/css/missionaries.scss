@@ -1,0 +1,220 @@
+@import "normalize";
+
+@import "nav-footer-header";
+nav {
+    background: rgb(248, 248, 248);
+}
+main {
+    width: 100%;
+    margin: 0; 
+    background: rgb(248, 248, 248);
+    h1 {
+        margin-left: 5%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 470%;
+        color: rgb(43, 43, 43);
+        font-family:'Tangerine', cursive;
+    }
+    .indent {
+        margin-left: 2.5%;
+    }
+    .blue {
+        width: 85%;
+        color: rgb(243, 243, 243);
+        background: rgb(0, 89, 167);
+        margin: 2.5%;
+        padding: 5%;
+        text-align: center;
+//leave on own page
+        h3 {
+            font-size: 500%;
+            font-family: 'Tangerine', cursive;
+            font-weight: bold;
+            margin-bottom: 2%;
+        }//
+        p {
+            font-size: 150%;
+        }
+    }
+    img {
+        width: 95%;
+        height: 300px;
+        object-fit: cover;
+        padding: 2.5%;
+    }
+}
+//form
+.form {
+    width: 85%;
+    color: rgb(243, 243, 243);
+    background: rgb(0, 89, 167);
+    margin: 2.5%;
+    padding: 2% 5% 5%;
+    text-align: center;
+
+    form {
+
+        fieldset {
+            border: 2px solid gold;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+            padding: 0;
+
+            legend {
+                font-size: 200%;
+                grid-column: 1/span 2;
+                margin: 0 0 0 2%;
+                padding: 0;
+                display: block;
+                text-align: left;
+            }
+            input, textarea {
+                display: block;
+                margin: 0 auto;
+                height: 44px;
+                width: 90%;
+                margin: 0 5% 10%;
+            }
+            .email {
+                margin: 0 5% 10% 0;
+            }
+            .text, button {
+                grid-column: 1/span 2;
+            }
+            textarea {
+                width: 90%;
+                margin: 0 5% 10% 4%;
+                height: 150px;
+            }
+            button {
+                height: 44px;
+                padding: 6% 0 13%;
+                width: 90%;
+                margin: 0% 5% 5%;
+                background: gold;
+                color: rgb(0, 89, 167);
+                font-weight: bold;
+                font-size: 150%;
+                border: none;
+            }
+            button:hover {
+                border: 3px solid gold;
+                color: gold;
+                background: rgb(0, 89, 167);
+                padding-bottom: calc(13% - 3px);
+                padding-top: calc(6% - 3px);
+            }
+        }
+    }
+}
+
+ 
+
+
+
+@media only screen and (min-width: 560px) {
+    @import "nav-footer-header-medium";
+    h2 { //leave on own page
+        font-size: 600%;
+    }//
+} /* end of media query */
+ 
+
+@media only screen and (min-width: 740px) {
+    @import "nav-footer-header-large";
+    main {
+        padding: 2.5%;
+        margin-left: 12%;
+        img {
+            height: 400px;
+            margin: 0;
+            padding: 0 0 2%;
+            margin: 0 1% 0;
+            width: 100%;
+        }
+        picture{
+            width: 95%;
+        }
+        .blue {
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            height: 400px;
+            padding: 0 5%;
+            margin: 0 1% 0;
+            width: 85%;
+
+            
+            h3, li {
+                align-self: center;
+            }
+            h3 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .gridpic {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 4%;
+        margin-bottom: 1%;
+        gap: 1px;
+        width: 96%;
+    }
+    main div:nth-child(odd) .blue {
+        grid-column: 2;
+        justify-items: center;
+    }
+    main div:nth-child(odd) picture {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+
+    .form {
+        width: 83.6%;
+        margin-left: 4.5%;
+        form {
+            fieldset {
+                grid-template-rows: 70px 90px 70px;
+    
+                legend {
+                    margin: 0 0 0 2%;
+                    padding: 0 2%;
+                }
+                input, textarea {
+                    margin: 0 5% 10%;
+                }
+                .email {
+                    margin: 0 0% 10% 0;
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+                .name {
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                .text {
+                    grid-column: 1;
+                    grid-row: 1/ span 3;
+                }
+                button {
+                    grid-row: 3;
+                    grid-column: 2;
+                    height: 100%;
+                }
+                textarea {
+                    margin: 0 5% 0% 4%;
+                    height: 220px;
+                }
+            }
+        }
+    }
+
+
+} /* end of media query */  

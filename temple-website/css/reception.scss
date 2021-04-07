@@ -1,0 +1,113 @@
+@import "normalize";
+
+@import "nav-footer-header";
+nav {
+    background: rgb(248, 248, 248);
+}
+main {
+    width: 100%;
+    margin: 0; 
+    background: rgb(248, 248, 248);
+    h1 {
+        margin-left: 5%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 470%;
+        color: rgb(43, 43, 43);
+        font-family:'Tangerine', cursive;
+    }
+    .indent {
+        margin-left: 2.5%;
+    }
+    .blue {
+        width: 85%;
+        color: rgb(243, 243, 243);
+        background: rgb(0, 89, 167);
+        margin: 2.5%;
+        padding: 5%;
+        text-align: center;
+//leave on own page
+        h3 {
+            font-size: 500%;
+            font-family: 'Tangerine', cursive;
+            font-weight: bold;
+            margin-bottom: 2%;
+            padding-top: 0;
+            margin-top: 0;
+        }//
+        p {
+            font-size: 150%;
+        }
+    }
+    img {
+        width: 95%;
+        height: 300px;
+        object-fit: cover;
+        padding: 2.5%;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 560px) {
+    @import "nav-footer-header-medium";
+    h2 { //leave on own page
+        font-size: 600%;
+    }//
+} /* end of media query */
+ 
+
+@media only screen and (min-width: 740px) {
+    @import "nav-footer-header-large";
+    main {
+        padding: 2.5%;
+        margin-left: 12%;
+        img {
+            height: 400px;
+            margin: 0;
+            padding: 0 0 2%;
+            margin: 0 1% 0;
+            width: 100%;
+        }
+        picture{
+            width: 95%;
+        }
+        .blue {
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            height: 400px;
+            padding: 0 5%;
+            margin: 0 1% 0;
+            width: 85%;
+
+            
+            h3, li {
+                align-self: center;
+            }
+            h3 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .gridpic {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 4%;
+        margin-bottom: 1%;
+        gap: 1px;
+        width: 96%;
+    }
+    main div:nth-child(odd) .blue {
+        grid-column: 2;
+        justify-items: center;
+    }
+    main div:nth-child(odd) picture {
+        grid-column: 1;
+        grid-row: 1;
+    }
+} /* end of media query */  
